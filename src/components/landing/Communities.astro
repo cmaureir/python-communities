@@ -1,0 +1,72 @@
+---
+import { getCollection } from 'astro:content';
+import { getImage } from 'astro:assets';
+import SearchBox from '@components/SearchBox.astro';
+
+const items = await getCollection('communities');
+
+// Transform to your format
+const communities = await Promise.all(
+    items.map(async (entry) => {
+        const optimizedImage = await getImage({
+            src: entry.data.image,
+            width: 600,
+            height: 400,
+        });
+
+        return {
+            id: entry.id, // Auto-generated from filename
+            title: entry.data.title,
+            city: entry.data.city,
+            country: entry.data.country,
+            category: entry.data.category,
+            description: entry.data.description,
+            image: optimizedImage.src,
+            url: `/communities/${entry.id.replace('/index.md', '')}`,
+        };
+    })
+);
+
+const categories = [...new Set(items.map(item => item.category))];
+---
+
+<section>
+
+
+<script define:vars={{ communities }} is:inline>
+
+  document.addEventListener('alpine:init', () => {
+    Alpine.store('search', {
+      filteredItems: [],
+      allItems: communities
+    });
+  });
+</script>
+<div x-data>
+  <SearchBox items={communities} categories={categories} />
+
+  <div
+    class="grid grid-cols-1 gap-6 lg:gap-y-24 md:grid-cols-2 lg:grid-cols-3 py-12"
+  >
+    <template x-for="community in $store.search.filteredItems" :key="community.id">
+        <figure class="relative ">
+          <a :href="community.url" aria-hidden="true" class="absolute inset-0" />
+          <img
+            :alt="community.title"
+            :src="community.image"
+            class="w-full rounded-2xl shadow aspect-12/9 object-cover object-center"
+          />
+          <div class="mt-2 flex justify-between px-6">
+            <div>
+              <p class="mt-1 text-sm font-medium  text-base-900" x-text="community.title">
+              </p>
+              <h3 class="text-xs text-base-500" x-text="community.description"></h3>
+            </div>
+            <p class="text-base text-orange-599" x-text="community.city"></p>,
+            <p class="text-base text-orange-599" x-text="community.country"></p>
+          </div>
+        </figure>
+      </template>
+  </div>
+</div>
+</section>

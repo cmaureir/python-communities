@@ -1,0 +1,191 @@
+---
+// SearchBox.astro
+interface Item {
+  id: number;
+  title: string;
+  city: string;
+  category: string;
+  description?: string;
+}
+
+interface Props {
+  items: Item[];
+  categories: string[];
+}
+
+const { items, categories } = Astro.props;
+---
+
+<div
+  x-data={`{
+    searchQuery: '',
+    selectedCategory: 'all',
+    showPreview: false,
+    items: ${JSON.stringify(items)},
+
+    init() {
+      this.$store.search.allItems = this.items;
+      this.$store.search.filteredItems = this.items;
+      this.updateFilters();
+    },
+
+    updateFilters() {
+      let filtered = this.items;
+
+      // Filter by category
+      if (this.selectedCategory !== 'all') {
+        filtered = filtered.filter(item =>
+          item.category === this.selectedCategory
+        );
+      }
+
+      // Filter by search query
+      if (this.searchQuery.trim()) {
+        const query = this.searchQuery.toLowerCase();
+        filtered = filtered.filter(item =>
+          item.title.toLowerCase().includes(query) ||
+          item.city.toLowerCase().includes(query) ||
+          item.category.toLowerCase().includes(query) ||
+          (item.description && item.description.toLowerCase().includes(query))
+        );
+      }
+
+      // Update the store
+      this.$store.search.filteredItems = filtered;
+
+      return filtered;
+    },
+
+    get filteredItems() {
+      return this.updateFilters();
+    },
+
+    get previewItems() {
+      return this.filteredItems.slice(0, 5);
+    },
+
+    handleSearch() {
+      this.showPreview = false;
+      // Handle search submit - you can emit an event or navigate
+      console.log('Searching for:', this.searchQuery, 'in category:', this.selectedCategory);
+      console.log('Results:', this.filteredItems);
+    },
+
+    selectItem(item) {
+      this.searchQuery = item.title;
+      this.showPreview = false;
+      // Handle item selection
+      console.log('Selected item:', item);
+    }
+  }`}
+  @click.away="showPreview = false"
+  class="w-full max-w-4xl mx-auto"
+>
+  <div class="bg-white rounded-lg shadow-lg p-6">
+    <div class="flex flex-col md:flex-row gap-4">
+
+      <!-- Category Filter -->
+      <div class="md:w-48">
+        <label for="category" class="block text-sm font-medium text-gray-700 mb-2">
+          Category
+        </label>
+        <select
+          id="category"
+          x-model="selectedCategory"
+          @change="updateFilters()"
+          class="w-full px-4 py-2 border border-gray-300 rounded-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none"
+        >
+          <option value="all">All Categories</option>
+          {categories.map(category => (
+            <option value={category}>{category}</option>
+          ))}
+        </select>
+      </div>
+
+      <!-- Search Input with Preview -->
+      <div class="flex-1 relative">
+        <label for="search" class="block text-sm font-medium text-gray-700 mb-2">
+          Search
+        </label>
+        <div class="flex gap-2">
+          <div class="relative flex-1">
+            <input
+              id="search"
+              type="text"
+              x-model="searchQuery"
+              @input="showPreview = searchQuery.length > 0; updateFilters()"
+              @focus="showPreview = searchQuery.length > 0"
+              @keydown.enter="handleSearch()"
+              @keydown.escape="showPreview = false"
+              placeholder="Search by title, city, category..."
+              class="w-full px-4 py-2 border border-gray-300 rounded-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none"
+            />
+
+            <!-- Search Preview Dropdown -->
+            <div
+              x-show="showPreview && previewItems.length > 0"
+              x-transition
+              class="absolute z-10 w-full mt-2 bg-white border border-gray-200 rounded-sm shadow-lg max-h-80 overflow-y-auto"
+            >
+              <template x-for="item in previewItems" :key="item.id">
+                <button
+                  @click="selectItem(item)"
+                  class="w-full px-4 py-3 text-left hover:bg-gray-50 border-b border-gray-100 last:border-b-0 transition-colors"
+                >
+                  <div class="font-medium text-gray-900" x-text="item.title"></div>
+                  <div class="text-sm text-gray-500 mt-1">
+                    <span x-text="item.city"></span>
+                    <span class="mx-2">•</span>
+                    <span x-text="item.category"></span>
+                  </div>
+                </button>
+              </template>
+
+              <div
+                x-show="filteredItems.length > 5"
+                class="px-4 py-2 text-sm text-gray-500 bg-gray-50 text-center"
+              >
+                <span x-text="`${filteredItems.length - 5} more results...`"></span>
+              </div>
+            </div>
+
+            <!-- No Results Message -->
+            <div
+              x-show="showPreview && searchQuery.length > 0 && filteredItems.length === 0"
+              x-transition
+              class="absolute z-10 w-full mt-2 bg-white border border-gray-200 rounded-sm shadow-lg p-4"
+            >
+              <p class="text-gray-500 text-center">No results found</p>
+            </div>
+          </div>
+
+          <!-- Search Button -->
+          <button
+            @click="handleSearch()"
+            class="px-6 py-2 bg-blue-600 text-white font-medium rounded-sm hover:bg-blue-700 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-colors"
+          >
+            Search
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Results Count -->
+    <div class="mt-4 text-sm text-gray-600">
+      <span x-show="searchQuery || selectedCategory !== 'all'">
+        Found <strong x-text="filteredItems.length"></strong>
+        <span x-text="filteredItems.length === 1 ? 'result' : 'results'"></span>
+      </span>
+    </div>
+  </div>
+</div>
+
+<script>
+  // Make sure Alpine.js is loaded
+  import Alpine from 'alpinejs';
+
+  if (!window.Alpine) {
+    window.Alpine = Alpine;
+    Alpine.start();
+  }
+</script>
