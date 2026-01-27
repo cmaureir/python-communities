@@ -36,11 +36,12 @@ const { Content } = await community.render();
     <header class="mb-8">
       <h1 class="text-4xl font-bold mb-4">{community.data.title}</h1>
       <div class="flex gap-4 text-gray-600">
-        <span>📍 {community.data.city}</span>
+        <span>📍 {community.data.city}, {community.data.country}</span>
         <span>🏷️ {community.data.category}</span>
+        <span>🌐 <a href="{community.data.website}">{community.data.website}</a></span>
       </div>
       {community.data.description && (
-        <p class="text-xl text-gray-700 mt-4">{community.data.description}</p>
+        <blockquote class="text-xl text-gray-700 mt-4">{community.data.description}</blockquote>
       )}
     </header>
 

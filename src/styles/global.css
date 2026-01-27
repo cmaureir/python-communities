@@ -2,7 +2,7 @@
 @theme {
 
   /* base  */
- --color-base-50: oklch(97.3% 0.005 145.13);
+  --color-base-50: oklch(97.3% 0.005 145.13);
   --color-base-100: oklch(93.86% 0.013 141.67);
   --color-base-200: oklch(88.55% 0.021 140.81);
   --color-base-300: oklch(82.47% 0.02 140.41);
@@ -46,4 +46,20 @@
   :root {
     font-family: InterVariable, sans-serif;
   }
+}
+
+article a {
+    @apply  text-blue-500;
+}
+
+article ul {
+    @apply list-disc p-5;
+}
+
+article p {
+    @apply py-2;
+}
+
+article blockquote {
+    @apply p-4 my-4 border-s-8 italic;
 }

@@ -9,6 +9,7 @@ const communitiesCollection = defineCollection({
     category: z.string(),
     description: z.string().optional(),
     image: image(),
+    website: z.string().optional(),
   }),
 });
 
