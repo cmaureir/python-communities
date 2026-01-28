@@ -1,0 +1,46 @@
+---
+import { getCollection } from 'astro:content';
+
+const communities = await getCollection('communities');
+
+// You'll need to geocode cities to coordinates
+// For now, create a manual mapping or use a geocoding API
+const communityLocations = communities.map(community => ({
+  name: community.data.title,
+  city: community.data.city,
+  country: community.data.country,
+  url: `/communities/${community.id.replace('/index.md', '')}`,
+  lng: Number(community.data.longitude),
+  lat: Number(community.data.latitude),
+}));
+console.log(communityLocations);
+---
+
+<div id="map" style="height: 500px; width: 100%;"></div>
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<script is:inline define:vars={{ communityLocations }}>
+    document.addEventListener('DOMContentLoaded', () => {
+    const map = L.map('map').setView([20, 0], 2);
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '© OpenStreetMap contributors'
+    }).addTo(map);
+
+    communityLocations.forEach(community => {
+      const marker = L.marker([community.lat, community.lng]).addTo(map);
+      marker.bindPopup(`
+        <strong><a href="${community.url}">${community.name}</a></strong><br>
+        ${community.city}, ${community.country}
+      `);
+    });
+  });
+</script>
+
+<style>
+  #map {
+    border-radius: 8px;
+  }
+</style>

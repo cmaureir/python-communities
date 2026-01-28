@@ -2,6 +2,8 @@
 title: "PyLadies Berlin"
 city: "Berlin"
 country: "DE"
+latitude: 52.5210
+longitude: 13.4050
 category: "Meetup"
 website: "https://www.meetup.com/pyladies-berlin"
 description: "An International mentorship group for marginalized genders."

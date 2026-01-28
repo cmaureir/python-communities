@@ -6,6 +6,8 @@ const communitiesCollection = defineCollection({
     title: z.string(),
     city: z.string(),
     country: z.string(),
+    latitude: z.number(),
+    longitude: z.number(),
     category: z.string(),
     description: z.string().optional(),
     image: image(),
