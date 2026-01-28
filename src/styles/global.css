@@ -26,8 +26,13 @@
   --color-orange-800: oklch(36.86% 0.123 35.58);
   --color-orange-900: oklch(24.99% 0.084 35.46);
   --color-orange-950: oklch(19.57% 0.065 34.67);
+}
+@variant dark (&:is(.dark *));
 
-
+@layer base {
+    body {
+        @apply text-gray-900 dark:text-white;
+    }
 }
 /* CSS */
 :root {

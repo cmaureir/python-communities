@@ -1,0 +1,97 @@
+---
+---
+<div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+  <label id="themeToggle" for="AcceptConditions" class="relative block h-8 w-14 rounded-full bg-gray-300 transition-colors [-webkit-tap-highlight-color:transparent] has-[:checked]:bg-slate-500">
+    <input type="checkbox" id="AcceptConditions" class="peer sr-only">
+
+    <!-- Circle background with icons inside -->
+    <span class="absolute inset-y-0 start-0 m-1 size-6 rounded-full bg-white transition-[inset-inline-start] peer-checked:start-6 flex items-center justify-center">
+      <!-- Sun icon (visible when unchecked/light mode) -->
+      <svg id="sunIcon" class="w-4 h-4 text-yellow-500 transition-opacity absolute" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"></path>
+      </svg>
+
+      <!-- Moon icon (visible when checked/dark mode) -->
+      <svg id="moonIcon" class="w-4 h-4 text-gray-700 transition-opacity opacity-0 absolute" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+        <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+      </svg>
+    </span>
+  </label>
+</div>
+
+<script is:inline>
+  // Initialize theme on page load
+  const getTheme = () => {
+    const localStorageTheme = localStorage?.getItem("theme");
+    if (localStorageTheme === 'dark' || localStorageTheme === 'light') {
+      return localStorageTheme;
+    }
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      return 'dark';
+    }
+    return 'light';
+  };
+
+  const theme = getTheme();
+
+  // Apply theme immediately
+  if (theme === 'dark') {
+    document.documentElement.classList.add('dark');
+  } else {
+    document.documentElement.classList.remove('dark');
+  }
+
+  // Set icon visibility immediately (before DOM loads)
+  const setIconVisibility = () => {
+    const sunIcon = document.getElementById("sunIcon");
+    const moonIcon = document.getElementById("moonIcon");
+
+    if (sunIcon && moonIcon) {
+      if (theme === 'dark') {
+        sunIcon.style.opacity = "0";
+        moonIcon.style.opacity = "1";
+      } else {
+        sunIcon.style.opacity = "1";
+        moonIcon.style.opacity = "0";
+      }
+    }
+  };
+
+  // Try to set icons immediately
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', setIconVisibility);
+  } else {
+    setIconVisibility();
+  }
+
+  // Wait for DOM to be ready for event listeners
+  document.addEventListener('DOMContentLoaded', () => {
+    const checkbox = document.getElementById("AcceptConditions");
+    const sunIcon = document.getElementById("sunIcon");
+    const moonIcon = document.getElementById("moonIcon");
+
+    if (checkbox && sunIcon && moonIcon) {
+      // Set initial checkbox state
+      checkbox.checked = theme === 'dark';
+
+      // Toggle theme function
+      const handleToggleClick = () => {
+        const isDark = checkbox.checked;
+
+        if (isDark) {
+          document.documentElement.classList.add("dark");
+          localStorage.setItem("theme", "dark");
+          sunIcon.style.opacity = "0";
+          moonIcon.style.opacity = "1";
+        } else {
+          document.documentElement.classList.remove("dark");
+          localStorage.setItem("theme", "light");
+          sunIcon.style.opacity = "1";
+          moonIcon.style.opacity = "0";
+        }
+      };
+
+      checkbox.addEventListener("change", handleToggleClick);
+    }
+  });
+</script>

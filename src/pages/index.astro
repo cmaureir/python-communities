@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "@/layouts/BaseLayout.astro";
+import Navbar from "@/components/landing/Navbar.astro";
 import Hero from "@/components/landing/Hero.astro";
 import Communities from "@/components/landing/Communities.astro";
 import CommunityMap from "@/components/CommunityMap.astro";
@@ -7,6 +8,7 @@ import CommunityMap from "@/components/CommunityMap.astro";
 ---
 
 <BaseLayout>
+  <Navbar/>
   <Hero />
   <CommunityMap />
   <Communities />

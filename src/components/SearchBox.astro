@@ -79,14 +79,14 @@ const { items, categories } = Astro.props;
     }
   }`}
   @click.away="showPreview = false"
-  class="w-full max-w-4xl mx-auto"
+  class="w-full max-w-6xl mx-auto"
 >
-  <div class="bg-white rounded-lg shadow-lg p-6">
+<div class="bg-white dark:bg-zinc-900 rounded-lg shadow-lg p-6 dark:shadow-zinc-800/50">
     <div class="flex flex-col md:flex-row gap-4">
 
       <!-- Category Filter -->
       <div class="md:w-48">
-        <label for="category" class="block text-sm font-medium text-gray-700 mb-2">
+        <label for="category" class="block text-sm font-medium mb-2">
           Category
         </label>
         <select
@@ -104,7 +104,7 @@ const { items, categories } = Astro.props;
 
       <!-- Search Input with Preview -->
       <div class="flex-1 relative">
-        <label for="search" class="block text-sm font-medium text-gray-700 mb-2">
+        <label for="search" class="block text-sm font-medium mb-2">
           Search
         </label>
         <div class="flex gap-2">
