@@ -3,20 +3,19 @@
     // Enable top-level await, and other modern ESM features.
     "target": "ESNext",
     "module": "ESNext",
-    // Enable node-style module resolution, for things like npm package imports.
-    "moduleResolution": "node",
+    // Enable module resolution without file extensions on relative paths, for things like npm package imports.
+    "moduleResolution": "Bundler",
     // Enable JSON imports.
     "resolveJsonModule": true,
     // Enable stricter transpilation for better output.
     "isolatedModules": true,
     // Astro will directly run your TypeScript code, no transpilation needed.
     "noEmit": true,
-    "baseUrl": ".",
     "paths": {
-      "@/*": ["src/*"],
-      "@components/*": ["src/components/*"],
-      "@layouts/*": ["src/layouts/*"],
-      "@assets/*": ["src/assets/*"]
+      "@/*": ["./src/*"],
+      "@components/*": ["./src/components/*"],
+      "@layouts/*": ["./src/layouts/*"],
+      "@assets/*": ["./src/assets/*"]
     }
   }
 }
