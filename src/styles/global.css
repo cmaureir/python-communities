@@ -80,10 +80,30 @@ article ul {
     @apply list-disc p-5;
 }
 
+article ol {
+    @apply list-decimal p-5;
+}
+
+article li {
+    @apply py-1;
+}
+
 article p {
     @apply py-2;
 }
 
 article blockquote {
     @apply p-4 my-4 border-s-8 italic;
+}
+
+article code {
+    @apply bg-gray-100 dark:bg-zinc-800 px-1.5 py-0.5 rounded text-sm;
+}
+
+article pre {
+    @apply bg-gray-100 dark:bg-zinc-800 p-4 rounded-md overflow-x-auto my-4;
+}
+
+article pre code {
+    @apply bg-transparent p-0;
 }

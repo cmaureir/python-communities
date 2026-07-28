@@ -1,0 +1,44 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="How to Contribute">
+  <article class="max-w-3xl mx-auto px-4 py-12">
+    <header class="mb-8">
+      <h1 class="text-3xl font-bold text-base-800 dark:text-white">How to Contribute</h1>
+    </header>
+
+    <h2>Add a community</h2>
+    <ol>
+      <li>
+        Copy <code>src/content/communities/_base</code> into a new folder
+        named after your community (e.g. <code>src/content/communities/pybarcelona</code>).
+      </li>
+      <li>
+        Add an image (logo or photo) next to <code>index.md</code>, and fill
+        in the frontmatter: <code>title</code>, <code>city</code>,
+        <code>country</code>, <code>latitude</code>, <code>longitude</code>,
+        <code>category</code>, <code>description</code>, <code>image</code>,
+        and optionally <code>website</code>.
+      </li>
+      <li>Write a short body below the frontmatter describing the community.</li>
+      <li>
+        Open a pull request. CI will run a build to catch any schema or
+        markup errors.
+      </li>
+    </ol>
+
+    <p>
+      You don't need to be an official representative of a community to
+      submit it, anyone can add or improve a listing. Please only use logos
+      and information the community already makes public (their own site,
+      GitHub, or social media), not copyrighted material you don't have
+      rights to. See the <a href="/legal">Legal Notice</a> page for how this
+      content is licensed and attributed.
+    </p>
+
+    <h2>Local development</h2>
+    <pre><code>pnpm i
+pnpm dev</code></pre>
+  </article>
+</BaseLayout>
