@@ -16,7 +16,7 @@ const communityLocations = communities.map(community => ({
 console.log(communityLocations);
 ---
 
-<div id="map" class="w-full" style="height: 400px;"></div>
+<div id="map" class="w-full dark:ring-1 dark:ring-white/10" style="height: 400px;"></div>
 
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
@@ -25,9 +25,23 @@ console.log(communityLocations);
     document.addEventListener('DOMContentLoaded', () => {
     const map = L.map('map').setView([20, 0], 2);
 
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      attribution: '© OpenStreetMap contributors'
-    }).addTo(map);
+    const tileLayers = {
+      light: L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '© OpenStreetMap contributors'
+      }),
+      dark: L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+        attribution: '© OpenStreetMap contributors © CARTO'
+      })
+    };
+
+    let currentLayer = document.documentElement.classList.contains('dark') ? tileLayers.dark : tileLayers.light;
+    currentLayer.addTo(map);
+
+    window.addEventListener('theme-change', (event) => {
+      map.removeLayer(currentLayer);
+      currentLayer = event.detail.theme === 'dark' ? tileLayers.dark : tileLayers.light;
+      currentLayer.addTo(map);
+    });
 
     communityLocations.forEach(community => {
       const marker = L.marker([community.lat, community.lng]).addTo(map);
@@ -42,5 +56,30 @@ console.log(communityLocations);
 <style>
   #map {
     border-radius: 8px;
+  }
+
+  :global(.dark .leaflet-tile-pane) {
+    filter: brightness(1.3) contrast(0.9) saturate(1.15);
+  }
+
+  :global(.dark .leaflet-popup-content-wrapper),
+  :global(.dark .leaflet-popup-tip) {
+    background: #27272a;
+    color: #f4f4f5;
+  }
+  :global(.dark .leaflet-popup-content a) {
+    color: #93c5fd;
+  }
+  :global(.dark .leaflet-control-zoom a) {
+    background: #27272a;
+    color: #f4f4f5;
+    border-color: #3f3f46;
+  }
+  :global(.dark .leaflet-control-attribution) {
+    background: rgba(39, 39, 42, 0.8);
+    color: #d4d4d8;
+  }
+  :global(.dark .leaflet-control-attribution a) {
+    color: #93c5fd;
   }
 </style>

@@ -29,6 +29,25 @@
 }
 @variant dark (&:is(.dark *));
 
+/*
+ * Dark mode reverses the base scale's lightness (50<->950, 100<->900, ...)
+ * while keeping the same hue/chroma, so every existing text-base-*/bg-base-*
+ * usage automatically becomes dark-mode-appropriate without extra classes.
+ */
+.dark {
+  --color-base-50: oklch(20.6% 0.005 145.31);
+  --color-base-100: oklch(26.54% 0.006 134.86);
+  --color-base-200: oklch(39.62% 0.01 139.36);
+  --color-base-300: oklch(52.38% 0.013 141.15);
+  --color-base-400: oklch(65.4% 0.016 142.12);
+  --color-base-500: oklch(71.5% 0.018 142.45);
+  --color-base-600: oklch(76.52% 0.019 142.72);
+  --color-base-700: oklch(82.47% 0.02 140.41);
+  --color-base-800: oklch(88.55% 0.021 140.81);
+  --color-base-900: oklch(93.86% 0.013 141.67);
+  --color-base-950: oklch(97.3% 0.005 145.13);
+}
+
 @layer base {
     body {
         @apply text-gray-900 dark:text-white;
@@ -54,7 +73,7 @@
 }
 
 article a {
-    @apply  text-blue-500;
+    @apply  text-blue-500 dark:text-blue-400;
 }
 
 article ul {
