@@ -11,7 +11,7 @@ const communitiesCollection = defineCollection({
     longitude: z.number(),
     category: z.string(),
     description: z.string().optional(),
-    image: image(),
+    image: image().optional(),
     website: z.string().optional(),
   }),
 });

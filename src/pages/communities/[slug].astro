@@ -3,6 +3,7 @@ import { getCollection, render } from 'astro:content';
 import { Image } from 'astro:assets';
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import Hero from '@/components/landing/Hero.astro';
+import { getInitials } from '@/lib/placeholder';
 
 // Generate static paths for all communities
 export async function getStaticPaths() {
@@ -22,11 +23,20 @@ const { Content } = await render(community);
   <Hero />
   <article class="max-w-4xl mx-auto px-4 py-8">
     <!-- Hero Image -->
-    <Image
-      src={community.data.image}
-      alt={community.data.title}
-      class="w-80 object-cover rounded-lg mb-8"
-    />
+    {community.data.image ? (
+      <Image
+        src={community.data.image}
+        alt={community.data.title}
+        class="w-80 object-cover rounded-lg mb-8"
+      />
+    ) : (
+      <div
+        class="w-80 h-52 flex items-center justify-center rounded-lg mb-8 bg-[#3776ab] text-[#ffe873] text-5xl font-semibold"
+        aria-label={community.data.title}
+      >
+        {getInitials(community.data.title)}
+      </div>
+    )}
 
     <!-- Title and Metadata -->
     <header class="mb-8">
