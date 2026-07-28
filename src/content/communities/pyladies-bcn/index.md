@@ -1,0 +1,16 @@
+---
+title: "PyLadies BCN"
+city: "Barcelona"
+country: "ES"
+latitude: 41.4
+longitude: 2.17
+category: "Meetup"
+website: "https://www.meetup.com/PyLadies-BCN/"
+description: "We are an international mentorship group with a focus on helping more women become active participants and leaders in the Python open-source community."
+image: ./image.jpeg
+---
+
+<p>We are an international mentorship group with a focus on helping more women become active participants and leaders in the Python open-source community. Our mission is to promote, educate and advance a diverse Python community through outreach, education, conferences, events and social gatherings.</p>
+<p>PyLadies also aims to provide a friendly support network for women and a bridge to the larger Python world. Anyone with an interest in Python is encouraged to participate!</p>
+<p><span style="font-size : 16px">And if you'd like to get some more information about our parent organization, check out the web site:</span> <a href="http://www.pyladies.com" target="_blank" class="linkified" style="font-size : 16px">http://www.pyladies.com</a><span style="font-size : 16px"> </span></p>
+<p>Our Code of Conduct: <a href="http://www.pyladies.com/CodeOfConduct/" target="_blank" class="linkified">http://www.pyladies.com/CodeOfConduct/</a></p>
