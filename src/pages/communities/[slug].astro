@@ -1,5 +1,5 @@
 ---
-import { getCollection } from 'astro:content';
+import { getCollection, render } from 'astro:content';
 import { Image } from 'astro:assets';
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import Hero from '@/components/landing/Hero.astro';
@@ -7,17 +7,15 @@ import Hero from '@/components/landing/Hero.astro';
 // Generate static paths for all communities
 export async function getStaticPaths() {
   const communities = await getCollection('communities');
-    // Debug: Log all entries
-  console.log('All community IDs:', communities.map(c => c.id));
 
   return communities.map((community) => ({
-    params: { slug: community.slug },
+    params: { slug: community.id },
     props: { community },
   }));
 }
 
 const { community } = Astro.props;
-const { Content } = await community.render();
+const { Content } = await render(community);
 ---
 
 <BaseLayout title={community.data.title}>

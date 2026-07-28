@@ -6,7 +6,7 @@ category: "A category from: Meetup, Conference, Online, Workshop"
 latitude: 10.000000
 longitude: 30.123456
 website: "Main URL for the community"
-description: "A description",
+description: "A description"
 image: ./image.jpeg
 ---
 

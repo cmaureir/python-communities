@@ -1,7 +1,8 @@
 import { defineCollection, z } from 'astro:content';
+import { glob } from 'astro/loaders';
 
 const communitiesCollection = defineCollection({
-  type: 'content',
+  loader: glob({ pattern: ['**/*.md', '!_*/**'], base: './src/content/communities' }),
   schema: ({ image }) => z.object({
     title: z.string(),
     city: z.string(),

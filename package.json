@@ -10,16 +10,16 @@
     "astro": "astro"
   },
   "devDependencies": {
-    "@astrojs/sitemap": "^3.4.1",
-    "@tailwindcss/vite": "^4.1.10",
-    "astro": "^5.9.3",
-    "tailwindcss": "^4.1.10"
+    "@astrojs/sitemap": "^3.7.3",
+    "@tailwindcss/vite": "^4.3.3",
+    "astro": "^7.1.5",
+    "tailwindcss": "^4.3.3"
   },
   "dependencies": {
-    "@astrojs/alpinejs": "^0.4.9",
+    "@astrojs/alpinejs": "^1.0.0",
     "@types/alpinejs": "^3.13.11",
-    "alpinejs": "^3.15.4",
+    "alpinejs": "^3.15.12",
     "leaflet": "^1.9.4",
-    "sharp": "^0.34.5"
+    "sharp": "^0.35.3"
   }
 }
