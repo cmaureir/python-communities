@@ -6,6 +6,7 @@ const communities = await getCollection('communities');
 // You'll need to geocode cities to coordinates
 // For now, create a manual mapping or use a geocoding API
 const communityLocations = communities.map(community => ({
+  id: community.id,
   name: community.data.title,
   city: community.data.city,
   country: community.data.country,
@@ -13,7 +14,6 @@ const communityLocations = communities.map(community => ({
   lng: Number(community.data.longitude),
   lat: Number(community.data.latitude),
 }));
-console.log(communityLocations);
 ---
 
 <div id="map" class="w-full dark:ring-1 dark:ring-white/10" style="height: 400px;"></div>
@@ -43,12 +43,27 @@ console.log(communityLocations);
       currentLayer.addTo(map);
     });
 
+    const markersById = new Map();
     communityLocations.forEach(community => {
       const marker = L.marker([community.lat, community.lng]).addTo(map);
       marker.bindPopup(`
         <strong><a href="${community.url}">${community.name}</a></strong><br>
         ${community.city}, ${community.country}
       `);
+      markersById.set(community.id, marker);
+    });
+
+    window.addEventListener('communities-filtered', (event) => {
+      const visibleIds = new Set(event.detail.ids);
+      markersById.forEach((marker, id) => {
+        const shouldShow = visibleIds.has(id);
+        const isShown = map.hasLayer(marker);
+        if (shouldShow && !isShown) {
+          marker.addTo(map);
+        } else if (!shouldShow && isShown) {
+          map.removeLayer(marker);
+        }
+      });
     });
   });
 </script>

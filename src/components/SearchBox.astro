@@ -13,9 +13,10 @@ interface Props {
   items: Item[];
   categories: string[];
   countries: string[];
+  countryNames: Record<string, string>;
 }
 
-const { items, categories, countries } = Astro.props;
+const { items, categories, countries, countryNames } = Astro.props;
 ---
 
 <div
@@ -25,6 +26,7 @@ const { items, categories, countries } = Astro.props;
     selectedCountry: 'all',
     showPreview: false,
     items: ${JSON.stringify(items)},
+    countryNames: ${JSON.stringify(countryNames)},
 
     init() {
       this.$store.search.allItems = this.items;
@@ -64,6 +66,10 @@ const { items, categories, countries } = Astro.props;
       // Update the store
       this.$store.search.filteredItems = filtered;
 
+      window.dispatchEvent(
+        new CustomEvent('communities-filtered', { detail: { ids: filtered.map(item => item.id) } })
+      );
+
       return filtered;
     },
 
@@ -90,7 +96,7 @@ const { items, categories, countries } = Astro.props;
     }
   }`}
   @click.away="showPreview = false"
-  class="w-full max-w-6xl mx-auto"
+  class="w-full max-w-7xl 2xl:max-w-[100rem] mx-auto"
 >
 <div class="bg-white dark:bg-zinc-800 rounded-lg shadow-lg dark:shadow-none dark:ring-1 dark:ring-white/10 p-6">
     <div class="flex flex-col md:flex-row gap-4">
@@ -126,7 +132,7 @@ const { items, categories, countries } = Astro.props;
         >
           <option value="all">All Countries</option>
           {countries.map(country => (
-            <option value={country}>{country}</option>
+            <option value={country}>{countryNames[country] ?? country}</option>
           ))}
         </select>
       </div>
@@ -191,7 +197,7 @@ const { items, categories, countries } = Astro.props;
           <!-- Search Button -->
           <button
             @click="handleSearch()"
-            class="px-6 py-2 bg-blue-600 dark:bg-blue-500 text-white font-medium rounded-sm hover:bg-blue-700 dark:hover:bg-blue-600 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-colors"
+            class="px-6 py-2 bg-blue-600 dark:bg-blue-500 text-white font-medium rounded-md hover:bg-blue-700 dark:hover:bg-blue-600 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-colors"
           >
             Search
           </button>
@@ -201,10 +207,10 @@ const { items, categories, countries } = Astro.props;
 
     <!-- Results Count -->
     <div class="mt-4 text-sm text-gray-600 dark:text-zinc-400">
-      <span x-show="searchQuery || selectedCategory !== 'all' || selectedCountry !== 'all'">
-        Found <strong x-text="filteredItems.length"></strong>
-        <span x-text="filteredItems.length === 1 ? 'result' : 'results'"></span>
-      </span>
+      <strong x-text="filteredItems.length"></strong>&nbsp;
+      <span x-text="filteredItems.length === 1 ? 'community' : 'communities'"></span>
+      <span x-show="selectedCategory !== 'all'"> in <span x-text="selectedCategory"></span></span>
+      <span x-show="selectedCountry !== 'all'"> in <span x-text="countryNames[selectedCountry] ?? selectedCountry"></span></span>
     </div>
   </div>
 </div>
