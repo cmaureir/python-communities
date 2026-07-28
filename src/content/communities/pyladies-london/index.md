@@ -4,7 +4,7 @@ city: "London"
 country: "GB"
 latitude: 51.51
 longitude: -0.13
-category: "Meetup"
+category: "PyLadies"
 website: "https://www.meetup.com/PyLadiesLondon/"
 description: "For inquiries of any kind, please email london@pyladies.com."
 image: ./image.png

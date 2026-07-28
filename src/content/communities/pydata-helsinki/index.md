@@ -4,7 +4,7 @@ city: "Helsinki"
 country: "FI"
 latitude: 60.17
 longitude: 24.94
-category: "Meetup"
+category: "PyData"
 website: "https://www.meetup.com/pydatahelsinki/"
 description: "A meetup for those working in machine learning, data engineering, and statistical modeling using Python and other open-source tools."
 image: ./image.jpeg

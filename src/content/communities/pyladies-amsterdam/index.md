@@ -4,7 +4,7 @@ city: "Amsterdam"
 country: "NL"
 latitude: 52.37
 longitude: 4.89
-category: "Meetup"
+category: "PyLadies"
 website: "https://www.meetup.com/pyladiesams/"
 description: "We are the official Amsterdam chapter of a global non-profit organization PyLadies and we create diversity and inclusion in technology."
 image: ./image.jpeg

@@ -4,7 +4,7 @@ city: "Brussels"
 country: "BE"
 latitude: 50.83
 longitude: 4.33
-category: "Meetup"
+category: "PyLadies"
 website: "https://www.meetup.com/pyladies-brussels/"
 description: "[English version below] Bienvenue à PyLadies Bruxelles !"
 image: ./image.jpeg

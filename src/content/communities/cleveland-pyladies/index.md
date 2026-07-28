@@ -4,7 +4,7 @@ city: "Cleveland"
 country: "US"
 latitude: 41.49
 longitude: -81.67
-category: "Meetup"
+category: "PyLadies"
 website: "https://www.meetup.com/cle-pyladies/"
 description: "We are looking for additional co-organizers for the Cleveland PyLadies!"
 image: ./image.jpeg

@@ -4,7 +4,7 @@ city: "Madrid"
 country: "ES"
 latitude: 40.42
 longitude: -3.71
-category: "Meetup"
+category: "PyLadies"
 website: "https://www.meetup.com/pyladiesmadrid/"
 description: "Somos una agrupación local de la organización internacional PyLadies, cuyo objetivo es ayudar y motivar a más mujeres para que sean participantes activas y líderes de la comunidad open source de Python."
 image: ./image.jpeg

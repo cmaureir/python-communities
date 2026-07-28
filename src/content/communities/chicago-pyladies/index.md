@@ -4,7 +4,7 @@ city: "Chicago"
 country: "US"
 latitude: 41.88
 longitude: -87.63
-category: "Meetup"
+category: "PyLadies"
 website: "https://www.meetup.com/Chicago-PyLadies/"
 description: "A Python meetup group based in Chicago."
 image: ./image.jpeg

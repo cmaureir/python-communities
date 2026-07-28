@@ -4,7 +4,7 @@ city: "San Francisco"
 country: "US"
 latitude: 37.77
 longitude: -122.4
-category: "Meetup"
+category: "PyLadies"
 website: "https://www.meetup.com/pyladiessf/"
 description: "A Python meetup group based in San Francisco."
 image: ./image.jpeg

@@ -4,7 +4,7 @@ city: "Vilnius"
 country: "LT"
 latitude: 54.7
 longitude: 25.27
-category: "Meetup"
+category: "PyLadies"
 website: "https://www.meetup.com/pyladies-lithuania/"
 description: "Welcome to PyLadies Lithuania Meetup!"
 image: ./image.jpeg

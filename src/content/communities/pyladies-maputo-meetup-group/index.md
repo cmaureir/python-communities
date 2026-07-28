@@ -4,7 +4,7 @@ city: "Maputo"
 country: "MZ"
 latitude: -25.95
 longitude: 32.57
-category: "Meetup"
+category: "PyLadies"
 website: "https://www.meetup.com/mpt-pyladies/"
 description: "We are the official Maputo chapter of a global non-profit organization PyLadies and we act on diversity and inclusion in technology."
 image: ./image.jpeg

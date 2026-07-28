@@ -4,7 +4,7 @@ city: "Barcelona"
 country: "ES"
 latitude: 41.4
 longitude: 2.17
-category: "Meetup"
+category: "PyLadies"
 website: "https://www.meetup.com/PyLadies-BCN/"
 description: "We are an international mentorship group with a focus on helping more women become active participants and leaders in the Python open-source community."
 image: ./image.jpeg

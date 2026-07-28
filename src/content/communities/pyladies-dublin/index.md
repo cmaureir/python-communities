@@ -4,7 +4,7 @@ city: "Dublin"
 country: "IE"
 latitude: 53.33
 longitude: -6.25
-category: "Meetup"
+category: "PyLadies"
 website: "https://www.meetup.com/pyladiesdublin/"
 description: "We are the first Irish PyLadies group founded in 2013."
 image: ./image.png

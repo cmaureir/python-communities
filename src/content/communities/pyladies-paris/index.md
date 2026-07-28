@@ -4,7 +4,7 @@ city: "Paris"
 country: "FR"
 latitude: 48.86
 longitude: 2.34
-category: "Meetup"
+category: "PyLadies"
 website: "https://www.meetup.com/pyladiesparis/"
 description: "The meetups are free and everyone is welcome to join."
 image: ./image.jpeg

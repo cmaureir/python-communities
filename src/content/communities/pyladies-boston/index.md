@@ -4,7 +4,7 @@ city: "Boston"
 country: "US"
 latitude: 42.36
 longitude: -71.06
-category: "Meetup"
+category: "PyLadies"
 website: "https://www.meetup.com/pyladies-boston/"
 description: "A Python meetup group based in Boston."
 image: ./image.jpeg

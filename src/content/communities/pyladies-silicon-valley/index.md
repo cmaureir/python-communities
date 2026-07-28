@@ -4,7 +4,7 @@ city: "Sunnyvale"
 country: "US"
 latitude: 37.37
 longitude: -122.03
-category: "Meetup"
+category: "PyLadies"
 website: "https://www.meetup.com/PyLadies-Silicon-Valley/"
 description: "We are a group for women and non-binary developers Silicon Valley area."
 image: ./image.jpeg

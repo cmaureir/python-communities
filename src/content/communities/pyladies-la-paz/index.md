@@ -4,7 +4,7 @@ city: "La Paz"
 country: "BO"
 latitude: -16.5
 longitude: -68.15
-category: "Meetup"
+category: "PyLadies"
 website: "https://www.meetup.com/La-Paz-PyLadies-Meetup/"
 description: "Everyone is invited, especially if they help to include more women in this area."
 image: ./image.png

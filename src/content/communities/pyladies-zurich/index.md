@@ -4,7 +4,7 @@ city: "Zürich"
 country: "CH"
 latitude: 47.38
 longitude: 8.54
-category: "Meetup"
+category: "PyLadies"
 website: "https://www.meetup.com/pyladies-zurich/"
 description: "PyLadies Zurich is part of an international mentorship group for underrepresented genders in the Python community, such as but not limited to women, trans people and non-binary people."
 image: ./image.jpeg

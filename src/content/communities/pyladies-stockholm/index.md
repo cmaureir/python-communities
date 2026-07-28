@@ -4,7 +4,7 @@ city: "Stockholm"
 country: "SE"
 latitude: 59.33
 longitude: 18.07
-category: "Meetup"
+category: "PyLadies"
 website: "https://www.meetup.com/pyladiesstockholm/"
 description: "We are an international group with a focus on helping more women become active participants and leaders in the Python open-source community."
 image: ./image.jpeg

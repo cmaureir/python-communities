@@ -4,7 +4,7 @@ city: "Munich"
 country: "DE"
 latitude: 48.14
 longitude: 11.58
-category: "Meetup"
+category: "PyLadies"
 website: "https://www.meetup.com/pyladiesmunich/"
 description: "We are the Munich chapter of an international mentorship group, PyLadies, with a focus on helping more women become active participants and leaders in the Python open-source community."
 image: ./image.jpeg
