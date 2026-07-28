@@ -13,6 +13,7 @@ const communitiesCollection = defineCollection({
     description: z.string().optional(),
     image: image().optional(),
     website: z.string().optional(),
+    inactive: z.enum(['yes', 'no']).optional(),
   }),
 });
 
