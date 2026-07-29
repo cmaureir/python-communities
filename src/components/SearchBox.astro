@@ -33,7 +33,24 @@ const { items, categories, countries, countryNames } = Astro.props;
     init() {
       this.$store.search.allItems = this.items;
       this.$store.search.filteredItems = this.items;
+      this.computePageSize();
+      window.addEventListener('resize', () => this.computePageSize());
       this.updateFilters();
+    },
+
+    computePageSize() {
+      const w = window.innerWidth;
+      let columns = 1;
+      if (w >= 1536) columns = 6;
+      else if (w >= 1280) columns = 4;
+      else if (w >= 1024) columns = 3;
+      else if (w >= 768) columns = 2;
+
+      const size = columns === 1 ? 5 : columns * 2;
+      if (size !== this.$store.search.pageSize) {
+        this.$store.search.pageSize = size;
+        this.$store.search.currentPage = 1;
+      }
     },
 
     updateFilters() {
@@ -116,7 +133,7 @@ const { items, categories, countries, countryNames } = Astro.props;
         <select
           id="category"
           x-model="selectedCategory"
-          @change="updateFilters()"
+          @change="$store.search.currentPage = 1; updateFilters()"
           class="w-full px-4 py-2 border border-gray-300 dark:border-zinc-600 dark:bg-zinc-900 dark:text-zinc-100 rounded-sm focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400 focus:border-transparent outline-none"
         >
           <option value="all">All Categories</option>
@@ -134,7 +151,7 @@ const { items, categories, countries, countryNames } = Astro.props;
         <select
           id="country"
           x-model="selectedCountry"
-          @change="updateFilters()"
+          @change="$store.search.currentPage = 1; updateFilters()"
           class="w-full px-4 py-2 border border-gray-300 dark:border-zinc-600 dark:bg-zinc-900 dark:text-zinc-100 rounded-sm focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400 focus:border-transparent outline-none"
         >
           <option value="all">All Countries</option>
@@ -155,7 +172,7 @@ const { items, categories, countries, countryNames } = Astro.props;
               id="search"
               type="text"
               x-model="searchQuery"
-              @input="showPreview = searchQuery.length > 0; updateFilters()"
+              @input="showPreview = searchQuery.length > 0; $store.search.currentPage = 1; updateFilters()"
               @focus="showPreview = searchQuery.length > 0"
               @keydown.enter="handleSearch()"
               @keydown.escape="showPreview = false"
@@ -226,7 +243,7 @@ const { items, categories, countries, countryNames } = Astro.props;
         <input
           type="checkbox"
           x-model="includeInactive"
-          @change="updateFilters()"
+          @change="$store.search.currentPage = 1; updateFilters()"
           class="size-4 rounded border-gray-300 dark:border-zinc-600 text-blue-600 dark:text-blue-500 focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400"
         />
         Include Inactive Communities
