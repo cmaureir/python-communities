@@ -6,6 +6,7 @@ interface Item {
   city: string;
   country: string;
   category: string[];
+  inactive: boolean;
   description?: string;
 }
 
@@ -24,6 +25,7 @@ const { items, categories, countries, countryNames } = Astro.props;
     searchQuery: '',
     selectedCategory: 'all',
     selectedCountry: 'all',
+    includeInactive: true,
     showPreview: false,
     items: ${JSON.stringify(items)},
     countryNames: ${JSON.stringify(countryNames)},
@@ -36,6 +38,11 @@ const { items, categories, countries, countryNames } = Astro.props;
 
     updateFilters() {
       let filtered = this.items;
+
+      // Filter out inactive communities unless included
+      if (!this.includeInactive) {
+        filtered = filtered.filter(item => !item.inactive);
+      }
 
       // Filter by category
       if (this.selectedCategory !== 'all') {
@@ -202,6 +209,19 @@ const { items, categories, countries, countryNames } = Astro.props;
             Search
           </button>
         </div>
+      </div>
+
+      <!-- Include Inactive Toggle -->
+      <div class="flex md:items-end">
+        <label class="flex items-center gap-2 text-sm font-medium cursor-pointer select-none whitespace-nowrap">
+          <input
+            type="checkbox"
+            x-model="includeInactive"
+            @change="updateFilters()"
+            class="size-4 rounded border-gray-300 dark:border-zinc-600 text-blue-600 dark:text-blue-500 focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400"
+          />
+          Include Inactive Communities
+        </label>
       </div>
     </div>
 

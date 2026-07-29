@@ -21,6 +21,7 @@ const communities = await Promise.all(
             country: entry.data.country,
             countryName: regionNames.of(entry.data.country) ?? entry.data.country,
             category: entry.data.category,
+            inactive: entry.data.inactive === 'yes',
             description: entry.data.description,
             image,
             url: `/communities/${entry.id.replace('/index.md', '')}`,
