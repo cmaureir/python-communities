@@ -4,8 +4,8 @@ city: "Ughelli"
 country: "NG"
 latitude: 5.5
 longitude: 5.98
-category: "PyData"
-website: "https://www.meetup.com/pydata-ughelli/"
+category: ["PyData"]
+meetup: "https://www.meetup.com/pydata-ughelli/"
 description: "PyData is an educational program of NumFOCUS, a 501(c)3 non-profit organization in the United States."
 image: ./image.jpeg
 ---

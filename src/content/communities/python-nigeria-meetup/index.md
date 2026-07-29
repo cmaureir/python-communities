@@ -4,8 +4,8 @@ city: "Lagos"
 country: "NG"
 latitude: 6.45
 longitude: 3.47
-category: "Meetup"
-website: "https://www.meetup.com/python-users-nigeria-meetup/"
+category: ["Meetup"]
+meetup: "https://www.meetup.com/python-users-nigeria-meetup/"
 description: "Welcome to the Official Python Nigeria Meetup!"
 image: ./image.jpeg
 ---

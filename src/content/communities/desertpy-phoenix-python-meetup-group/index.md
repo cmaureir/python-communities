@@ -4,8 +4,8 @@ city: "Scottsdale"
 country: "US"
 latitude: 33.49
 longitude: -111.92
-category: "Meetup"
-website: "https://www.meetup.com/phoenix-python-meetup-group/"
+category: ["Meetup"]
+meetup: "https://www.meetup.com/phoenix-python-meetup-group/"
 description: "DesertPy is the Phoenix area Python Meetup Group that promotes, educates and advances a diverse Python community through outreach, education, conferences, events and social gatherings."
 image: ./image.jpeg
 ---

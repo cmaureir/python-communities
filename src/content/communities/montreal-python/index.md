@@ -4,8 +4,8 @@ city: "Montréal"
 country: "CA"
 latitude: 45.54
 longitude: -73.64
-category: "Meetup"
-website: "https://www.meetup.com/montreal-python/"
+category: ["Meetup"]
+meetup: "https://www.meetup.com/montreal-python/"
 description: "We have regular meetings consisting of several short presentations followed by a longer main presentation."
 image: ./image.jpeg
 ---

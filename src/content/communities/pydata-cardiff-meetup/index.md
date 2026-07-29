@@ -4,8 +4,8 @@ city: "Cardiff"
 country: "GB"
 latitude: 51.48
 longitude: -3.18
-category: "PyData"
-website: "https://www.meetup.com/pydata-cardiff-meetup/"
+category: ["PyData"]
+meetup: "https://www.meetup.com/pydata-cardiff-meetup/"
 description: "SLIDES FROM OUR MEETUPS ARE AVAILABLE FOR DOWNLOAD: https://github.com/pydatacardiff PyData Cardiff events are beginner friendly."
 image: ./image.png
 ---

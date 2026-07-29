@@ -4,8 +4,8 @@ city: "Vacoas-Phoenix"
 country: "MU"
 latitude: -20.3
 longitude: 57.48
-category: "Meetup"
-website: "https://www.meetup.com/pymauritius/"
+category: ["Meetup"]
+meetup: "https://www.meetup.com/pymauritius/"
 description: "The Python Mauritius User Group (pymug) is the local Python user group of Mauritius."
 image: ./image.jpeg
 ---

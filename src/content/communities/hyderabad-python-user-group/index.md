@@ -4,8 +4,8 @@ city: "Hyderabad"
 country: "IN"
 latitude: 17.4
 longitude: 78.48
-category: "Meetup"
-website: "https://www.meetup.com/hydpygroup/"
+category: ["Meetup"]
+meetup: "https://www.meetup.com/hydpygroup/"
 description: "Hyderabad Python User Group (HydPy) is a community-driven initiative focused on promoting Python in Hyderabad."
 image: ./image.jpeg
 ---

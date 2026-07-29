@@ -4,8 +4,8 @@ city: "Buenos Aires"
 country: "AR"
 latitude: -34.61
 longitude: -58.37
-category: "PyData"
-website: "https://www.meetup.com/pydata-buenos-aires/"
+category: ["PyData"]
+meetup: "https://www.meetup.com/pydata-buenos-aires/"
 description: "PyData es un programa educativo de NumFOCUS."
 image: ./image.jpeg
 ---

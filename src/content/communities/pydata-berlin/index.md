@@ -4,8 +4,8 @@ city: "Berlin"
 country: "DE"
 latitude: 52.52
 longitude: 13.38
-category: "PyData"
-website: "https://www.meetup.com/PyData-Berlin/"
+category: ["PyData"]
+meetup: "https://www.meetup.com/PyData-Berlin/"
 description: "PyData is an educational program of NumFOCUS, a 501(c)3 non-profit organization in the United States."
 image: ./image.jpeg
 ---

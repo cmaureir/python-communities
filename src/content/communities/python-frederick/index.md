@@ -4,8 +4,8 @@ city: "Frederick"
 country: "US"
 latitude: 39.42
 longitude: -77.34
-category: "Meetup"
-website: "https://www.meetup.com/python-frederick/"
+category: ["Meetup"]
+meetup: "https://www.meetup.com/python-frederick/"
 description: "Python Frederick is for people interested in learning and using the Python programming language."
 image: ./image.jpeg
 ---

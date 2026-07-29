@@ -4,8 +4,8 @@ city: "Denver"
 country: "US"
 latitude: 39.7
 longitude: -105.08
-category: "PyData"
-website: "https://www.meetup.com/PyData-Denver/"
+category: ["PyData"]
+meetup: "https://www.meetup.com/PyData-Denver/"
 description: "This is a group for users and developers of data analysis tools in Python."
 image: ./image.jpeg
 ---

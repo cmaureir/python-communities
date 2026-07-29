@@ -4,8 +4,8 @@ city: "Natal"
 country: "BR"
 latitude: -5.79
 longitude: -35.21
-category: "PyData"
-website: "https://www.meetup.com/pydata-natal/"
+category: ["PyData"]
+meetup: "https://www.meetup.com/pydata-natal/"
 description: "Um ambiente de encontro e discussão do uso de Python em ciência de dados, aprendizado de máquina e redes neurais, em Natal."
 ---
 

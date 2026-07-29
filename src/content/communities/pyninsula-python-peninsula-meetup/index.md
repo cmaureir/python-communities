@@ -4,8 +4,8 @@ city: "San Mateo"
 country: "US"
 latitude: 37.55
 longitude: -122.27
-category: "Meetup"
-website: "https://www.meetup.com/Pyninsula-Python-Peninsula-Meetup/"
+category: ["Meetup"]
+meetup: "https://www.meetup.com/Pyninsula-Python-Peninsula-Meetup/"
 description: "Meet other local Python Programming Language enthusiasts!"
 image: ./image.jpeg
 ---

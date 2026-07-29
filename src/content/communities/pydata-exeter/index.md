@@ -4,8 +4,8 @@ city: "Exeter"
 country: "GB"
 latitude: 50.73
 longitude: -3.54
-category: "PyData"
-website: "https://www.meetup.com/pydata-exeter/"
+category: ["PyData"]
+meetup: "https://www.meetup.com/pydata-exeter/"
 description: "Our group is a hub in the Exeter area for those working with or interested in working with data in Python."
 image: ./image.png
 ---

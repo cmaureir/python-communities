@@ -4,8 +4,8 @@ city: "Cambridge"
 country: "US"
 latitude: 42.38
 longitude: -71.13
-category: "Meetup"
-website: "https://www.meetup.com/bostonpython/"
+category: ["Meetup"]
+meetup: "https://www.meetup.com/bostonpython/"
 description: "One of the largest local Python user groups in the world, with monthly presentations and project nights for developers of all skill levels."
 image: ./image.jpeg
 ---

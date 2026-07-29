@@ -4,8 +4,8 @@ city: "Las Vegas"
 country: "US"
 latitude: 36.17
 longitude: -115.12
-category: "Meetup"
-website: "https://www.meetup.com/vegaspy/"
+category: ["Meetup"]
+meetup: "https://www.meetup.com/vegaspy/"
 description: "We love Python."
 image: ./image.jpeg
 ---

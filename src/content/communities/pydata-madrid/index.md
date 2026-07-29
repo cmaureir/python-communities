@@ -4,8 +4,8 @@ city: "Madrid"
 country: "ES"
 latitude: 40.42
 longitude: -3.71
-category: "PyData"
-website: "https://www.meetup.com/pydata-madrid/"
+category: ["PyData"]
+meetup: "https://www.meetup.com/pydata-madrid/"
 description: "Nos reunimos el tercer o cuarto jueves de cada mes para hablar de Python, Datos, Visualización, Inteligencia Artificial, ¡y lo que surja!"
 image: ./image.jpeg
 ---

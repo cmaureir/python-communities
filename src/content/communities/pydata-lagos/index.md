@@ -4,8 +4,8 @@ city: "Lagos"
 country: "NG"
 latitude: 6.45
 longitude: 3.47
-category: "PyData"
-website: "https://www.meetup.com/pydata-lagos/"
+category: ["PyData"]
+meetup: "https://www.meetup.com/pydata-lagos/"
 description: "PyData is an educational program of NumFOCUS, a 501(c)(3) nonprofit organization in the United States."
 image: ./image.jpeg
 ---

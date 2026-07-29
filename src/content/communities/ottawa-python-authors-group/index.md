@@ -4,8 +4,8 @@ city: "Ottawa"
 country: "CA"
 latitude: 45.43
 longitude: -75.68
-category: "Meetup"
-website: "https://www.meetup.com/ottawapython/"
+category: ["Meetup"]
+meetup: "https://www.meetup.com/ottawapython/"
 description: "A community of programming enthusiasts who meet regularly to share, teach, and hack on Python together."
 image: ./image.jpeg
 ---

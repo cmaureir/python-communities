@@ -4,8 +4,8 @@ city: "Atlanta"
 country: "US"
 latitude: 33.86
 longitude: -84.4
-category: "PyData"
-website: "https://www.meetup.com/PyData-Atlanta/"
+category: ["PyData"]
+meetup: "https://www.meetup.com/PyData-Atlanta/"
 description: "The PyData Atlanta chapter holds free meetups that are open to the public."
 image: ./image.jpeg
 ---

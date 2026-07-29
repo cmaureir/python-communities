@@ -4,8 +4,8 @@ city: "Guayaquil"
 country: "EC"
 latitude: -2.21
 longitude: -79.9
-category: "PyData"
-website: "https://www.meetup.com/pydata-guayaquil/"
+category: ["PyData"]
+meetup: "https://www.meetup.com/pydata-guayaquil/"
 description: "PyData Guayaquil is a local community for data enthusiasts, practitioners, and researchers who are passionate about open-source tools in data science, machine learning, and AI."
 image: ./image.jpeg
 ---

@@ -4,8 +4,8 @@ city: "Zagreb"
 country: "HR"
 latitude: 45.8
 longitude: 15.97
-category: "Meetup"
-website: "https://www.meetup.com/python-hrvatska/"
+category: ["Meetup"]
+meetup: "https://www.meetup.com/python-hrvatska/"
 description: "A monthly meetup of Python developers from Zagreb and region."
 image: ./image.png
 ---

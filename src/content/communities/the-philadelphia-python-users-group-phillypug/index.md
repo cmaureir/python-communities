@@ -4,8 +4,8 @@ city: "Philadelphia"
 country: "US"
 latitude: 39.96
 longitude: -75.2
-category: "Meetup"
-website: "https://www.meetup.com/phillypug/"
+category: ["Meetup"]
+meetup: "https://www.meetup.com/phillypug/"
 description: "We are a diverse, friendly group of Pythonistas in the Philadelphia area."
 image: ./image.jpeg
 ---

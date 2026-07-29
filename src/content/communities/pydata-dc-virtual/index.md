@@ -4,8 +4,8 @@ city: "Washington"
 country: "US"
 latitude: 38.91
 longitude: -77.02
-category: "PyData"
-website: "https://www.meetup.com/PyData-DC-Virtual/"
+category: ["PyData"]
+meetup: "https://www.meetup.com/PyData-DC-Virtual/"
 description: "PyData is an educational program of NumFOCUS, a 501(c)3 non-profit organization in the United States."
 image: ./image.jpeg
 ---

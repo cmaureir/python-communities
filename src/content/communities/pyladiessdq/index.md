@@ -4,8 +4,8 @@ city: "Santo Domingo"
 country: "DO"
 latitude: 18.48
 longitude: -69.91
-category: "PyLadies"
-website: "https://www.meetup.com/pyladiessdq/"
+category: ["PyLadies"]
+meetup: "https://www.meetup.com/pyladiessdq/"
 description: "PyLadiesSDQ es un capítulo que pertenece a la comunidad mundial de PyLadies, que se establece en nuestro país con el objetivo de ayudar e incentivar a las mujeres a ingresar o desarrollarse en el mundo de la tecnología."
 image: ./image.jpeg
 ---

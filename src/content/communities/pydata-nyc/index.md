@@ -4,8 +4,8 @@ city: "New York"
 country: "US"
 latitude: 40.76
 longitude: -73.97
-category: "PyData"
-website: "https://www.meetup.com/pydatanyc/"
+category: ["PyData"]
+meetup: "https://www.meetup.com/pydatanyc/"
 description: "PyData is an educational program of NumFOCUS, a 501(c)3 non-profit organization in the United States."
 image: ./image.jpeg
 ---

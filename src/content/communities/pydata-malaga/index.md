@@ -4,8 +4,8 @@ city: "Málaga"
 country: "ES"
 latitude: 36.72
 longitude: -4.42
-category: "PyData"
-website: "https://www.meetup.com/pydata-malaga/"
+category: ["PyData"]
+meetup: "https://www.meetup.com/pydata-malaga/"
 description: "Bienvenidos a PyData Málaga, el capítulo local de la dinámica comunidad internacional de PyData."
 image: ./image.jpeg
 ---

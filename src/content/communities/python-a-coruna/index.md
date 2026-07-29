@@ -4,8 +4,8 @@ city: "A Coruña"
 country: "ES"
 latitude: 43.33
 longitude: -8.42
-category: "Meetup"
-website: "https://www.meetup.com/python-a-coruna/"
+category: ["Meetup"]
+meetup: "https://www.meetup.com/python-a-coruna/"
 description: "A Python meetup group based in A Coruña."
 image: ./image.jpeg
 ---

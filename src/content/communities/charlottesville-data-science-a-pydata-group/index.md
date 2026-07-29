@@ -4,8 +4,8 @@ city: "Charlottesville"
 country: "US"
 latitude: 38
 longitude: -78.47
-category: "PyData"
-website: "https://www.meetup.com/charlottesvilledatascience/"
+category: ["PyData"]
+meetup: "https://www.meetup.com/charlottesvilledatascience/"
 description: "A Python meetup group based in Charlottesville."
 image: ./image.jpeg
 ---

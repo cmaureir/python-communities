@@ -4,8 +4,8 @@ city: "Bellevue"
 country: "US"
 latitude: 47.62
 longitude: -122.21
-category: "PyData"
-website: "https://www.meetup.com/pydata_seattle/"
+category: ["PyData"]
+meetup: "https://www.meetup.com/pydata_seattle/"
 description: "A Python meetup group based in Bellevue."
 image: ./image.jpeg
 ---

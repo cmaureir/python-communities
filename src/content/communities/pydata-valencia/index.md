@@ -4,8 +4,8 @@ city: "Valencia"
 country: "ES"
 latitude: 39.48
 longitude: -0.39
-category: "PyData"
-website: "https://www.meetup.com/pydata-valencia/"
+category: ["PyData"]
+meetup: "https://www.meetup.com/pydata-valencia/"
 description: "PyData Valencia will be a new chapter of the PyData community, serving the growing ecosystem of data professionals, researchers, and enthusiasts in the Valencia region of Spain."
 image: ./image.jpeg
 ---

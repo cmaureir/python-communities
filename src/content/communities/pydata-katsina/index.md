@@ -4,8 +4,8 @@ city: "Norwich"
 country: "GB"
 latitude: 52.63
 longitude: 1.3
-category: "PyData"
-website: "https://www.meetup.com/pydata-katsina/"
+category: ["PyData"]
+meetup: "https://www.meetup.com/pydata-katsina/"
 description: "A PyData chapter connecting the international community of Python data analysis users and developers."
 ---
 

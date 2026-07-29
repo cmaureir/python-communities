@@ -4,8 +4,8 @@ city: "Berlin"
 country: "DE"
 latitude: 52.5210
 longitude: 13.4050
-category: "PyLadies"
-website: "https://www.meetup.com/pyladies-berlin"
+category: ["PyLadies"]
+meetup: "https://www.meetup.com/pyladies-berlin"
 description: "An International mentorship group for marginalized genders."
 image: ./pyladies-berlin.jpeg
 ---

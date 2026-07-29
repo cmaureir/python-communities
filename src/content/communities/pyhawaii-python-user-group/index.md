@@ -4,8 +4,8 @@ city: "Honolulu"
 country: "US"
 latitude: 21.33
 longitude: -157.83
-category: "Meetup"
-website: "https://www.meetup.com/pyhawaii-python-users-group/"
+category: ["Meetup"]
+meetup: "https://www.meetup.com/pyhawaii-python-users-group/"
 description: "PyHawaii is a community dedicated to the growth and use of the Python Programming Language in Honolulu, the Islands of Hawai'i and across the Pacific."
 image: ./image.jpeg
 ---

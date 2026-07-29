@@ -4,8 +4,8 @@ city: "Oslo"
 country: "NO"
 latitude: 59.91
 longitude: 10.75
-category: "PyLadies"
-website: "https://www.meetup.com/pyladies-oslo/"
+category: ["PyLadies"]
+meetup: "https://www.meetup.com/pyladies-oslo/"
 description: "An international mentorship group focused on helping more women become active participants and leaders in the Python open-source community, based in Oslo."
 ---
 

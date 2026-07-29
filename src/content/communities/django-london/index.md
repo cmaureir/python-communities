@@ -4,8 +4,8 @@ city: "London"
 country: "GB"
 latitude: 51.52
 longitude: -0.09
-category: "Meetup"
-website: "https://www.meetup.com/djangolondon/"
+category: ["Meetup"]
+meetup: "https://www.meetup.com/djangolondon/"
 description: "A monthly meetup for discussing Django, Python, and web development in London."
 image: ./image.jpeg
 ---

@@ -4,8 +4,8 @@ city: "Newquay"
 country: "GB"
 latitude: 50.41
 longitude: -5.09
-category: "PyData"
-website: "https://www.meetup.com/pydata-cornwall/"
+category: ["PyData"]
+meetup: "https://www.meetup.com/pydata-cornwall/"
 description: "PyData Cornwall is the Cornwall chapter of the global PyData community."
 image: ./image.jpeg
 ---

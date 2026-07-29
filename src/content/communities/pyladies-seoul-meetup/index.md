@@ -4,8 +4,8 @@ city: "Seoul"
 country: "KR"
 latitude: 37.56
 longitude: 126.99
-category: "PyLadies"
-website: "https://www.meetup.com/seoul-pyladies-meetup/"
+category: ["PyLadies"]
+meetup: "https://www.meetup.com/seoul-pyladies-meetup/"
 description: "This is a group for pyladies seoul location."
 image: ./image.jpeg
 ---

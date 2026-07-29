@@ -4,8 +4,8 @@ city: "Norfolk"
 country: "US"
 latitude: 36.85
 longitude: -76.29
-category: "Meetup"
-website: "https://www.meetup.com/virginia-python/"
+category: ["Meetup"]
+meetup: "https://www.meetup.com/virginia-python/"
 description: "Welcome to the Virginia Python Software meetup, we have expanded the original Norfolk group to now include the entire Commonwealth."
 image: ./image.png
 ---

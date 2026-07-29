@@ -4,8 +4,8 @@ city: "Pittsburgh"
 country: "US"
 latitude: 40.44
 longitude: -79.95
-category: "PyData"
-website: "https://www.meetup.com/pydata-pittsburgh/"
+category: ["PyData"]
+meetup: "https://www.meetup.com/pydata-pittsburgh/"
 description: "PyData Pittsburgh is a community for data scientists, machine learning practitioners, and all professionals, students, researchers, and enthusiasts working with Python and data in Pittsburgh."
 image: ./image.jpeg
 ---

@@ -4,8 +4,8 @@ city: "Orlando"
 country: "US"
 latitude: 28.54
 longitude: -81.37
-category: "Meetup"
-website: "https://www.meetup.com/OrlandoPython/"
+category: ["Meetup"]
+meetup: "https://www.meetup.com/OrlandoPython/"
 description: "A Python user group for Orlando, Florida, meeting twice monthly to discuss topics and projects in Python."
 image: ./image.jpeg
 ---

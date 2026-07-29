@@ -4,8 +4,8 @@ city: "Bratislava"
 country: "SK"
 latitude: 48.16
 longitude: 17.13
-category: "PyData"
-website: "https://www.meetup.com/pydata-slovakia-bratislava/"
+category: ["PyData"]
+meetup: "https://www.meetup.com/pydata-slovakia-bratislava/"
 description: "Python Data Enthusiasts and Users, Data scientists & Statisticians of all levels from Slovakia."
 image: ./image.jpeg
 ---

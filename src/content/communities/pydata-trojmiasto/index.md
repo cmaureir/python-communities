@@ -4,8 +4,8 @@ city: "Gdansk"
 country: "PL"
 latitude: 54.36
 longitude: 18.64
-category: "PyData"
-website: "https://www.meetup.com/PyData-Trojmiasto/"
+category: ["PyData"]
+meetup: "https://www.meetup.com/PyData-Trojmiasto/"
 description: "PyData Trójmiasto to cykl spotkań poświęconych tematyce data science, ML i AI."
 image: ./image.jpeg
 ---

@@ -4,8 +4,8 @@ city: "Valencia"
 country: "ES"
 latitude: 39.48
 longitude: -0.39
-category: "Meetup"
-website: "https://www.meetup.com/python-valencia-meetup/"
+category: ["Meetup"]
+meetup: "https://www.meetup.com/python-valencia-meetup/"
 description: "Grupo de usuarios Python Valencia: somos un grupo de gente interesada en Python o cualquier tecnología que lo envuelve."
 image: ./image.jpeg
 ---

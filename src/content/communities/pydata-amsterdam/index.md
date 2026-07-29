@@ -4,8 +4,9 @@ city: "Amsterdam"
 country: "NL"
 latitude: 52.37
 longitude: 4.89
-category: "PyData"
-website: "https://www.meetup.com/pydata-nl/"
+category: ["PyData", "Luma"]
+meetup: "https://www.meetup.com/pydata-nl/"
+luma: "https://luma.com/pydataamsterdam"
 description: "This Meetup is a place for technical people to come and hear technical talks, and network with likeminded people in the Amsterdam region interested in Python."
 image: ./image.jpeg
 ---

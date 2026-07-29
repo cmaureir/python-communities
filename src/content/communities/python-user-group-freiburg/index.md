@@ -4,8 +4,8 @@ city: "Freiburg"
 country: "DE"
 latitude: 47.99
 longitude: 7.85
-category: "Meetup"
-website: "https://www.meetup.com/Python-User-Group-Freiburg/"
+category: ["Meetup"]
+meetup: "https://www.meetup.com/Python-User-Group-Freiburg/"
 description: "The meetups are free and everybody is welcome to join."
 image: ./image.png
 ---

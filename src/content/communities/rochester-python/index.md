@@ -4,8 +4,8 @@ city: "Rochester"
 country: "US"
 latitude: 43.12
 longitude: -77.67
-category: "Meetup"
-website: "https://www.meetup.com/rochester-python-meetup/"
+category: ["Meetup"]
+meetup: "https://www.meetup.com/rochester-python-meetup/"
 description: "Rochester's local Python user group, with monthly presentations and lightning talks for developers of all skill levels."
 image: ./image.jpeg
 ---

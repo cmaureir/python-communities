@@ -4,8 +4,8 @@ city: "Tel Aviv-Yafo"
 country: "IL"
 latitude: 32.07
 longitude: 34.77
-category: "PyData"
-website: "https://www.meetup.com/pydata-tel-aviv/"
+category: ["PyData"]
+meetup: "https://www.meetup.com/pydata-tel-aviv/"
 description: "A Python meetup group based in Tel Aviv-Yafo."
 image: ./image.jpeg
 ---

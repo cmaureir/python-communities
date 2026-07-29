@@ -4,8 +4,8 @@ city: "Kuala Lumpur"
 country: "MY"
 latitude: 3.16
 longitude: 101.71
-category: "PyData"
-website: "https://www.meetup.com/PyDataKL/"
+category: ["PyData"]
+meetup: "https://www.meetup.com/PyDataKL/"
 description: "PyData is an educational program of NumFOCUS, a 501(c)3 non-profit organization in the United States."
 image: ./image.jpeg
 ---

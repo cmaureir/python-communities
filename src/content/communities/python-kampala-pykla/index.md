@@ -4,8 +4,8 @@ city: "Kampala"
 country: "UG"
 latitude: 0.32
 longitude: 32.58
-category: "Meetup"
-website: "https://www.meetup.com/pykampala/"
+category: ["Meetup"]
+meetup: "https://www.meetup.com/pykampala/"
 description: "PyKla is the local Python User Group in Kampala."
 image: ./image.jpeg
 ---

@@ -4,8 +4,8 @@ city: "Manila"
 country: "PH"
 latitude: 14.62
 longitude: 120.97
-category: "Meetup"
-website: "https://www.meetup.com/pythonph/"
+category: ["Meetup"]
+meetup: "https://www.meetup.com/pythonph/"
 description: "PythonPH is a non-stock, non-profit, volunteer-run organization dedicated to support and facilitate the growth of the community of Python programmers in the Philippines."
 image: ./image.jpeg
 ---

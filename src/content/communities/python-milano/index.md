@@ -4,8 +4,8 @@ city: "Milano"
 country: "IT"
 latitude: 45.46
 longitude: 9.19
-category: "Meetup"
-website: "https://www.meetup.com/python-milano/"
+category: ["Meetup"]
+meetup: "https://www.meetup.com/python-milano/"
 description: "We organize tech talks, live coding sessions, and social events about Python and its ecosystem."
 image: ./image.jpeg
 ---

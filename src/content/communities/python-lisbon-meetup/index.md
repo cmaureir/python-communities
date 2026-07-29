@@ -4,8 +4,8 @@ city: "Lisbon"
 country: "PT"
 latitude: 38.72
 longitude: -9.14
-category: "Meetup"
-website: "https://www.meetup.com/python-lisbon-meetup/"
+category: ["Meetup"]
+meetup: "https://www.meetup.com/python-lisbon-meetup/"
 description: "A community based in Lisbon centred around the Python 🐍 programming language!"
 image: ./image.jpeg
 ---

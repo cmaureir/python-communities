@@ -4,8 +4,8 @@ city: "Dortmund"
 country: "DE"
 latitude: 51.51
 longitude: 7.48
-category: "PyData"
-website: "https://www.meetup.com/datenanalyse-dortmund-pydata/"
+category: ["PyData"]
+meetup: "https://www.meetup.com/datenanalyse-dortmund-pydata/"
 description: "\\- English Description Below \\- Wir bieten ein monatliches Treffen für alle Data-Science-Enthusiasten."
 image: ./image.jpeg
 ---

@@ -4,8 +4,8 @@ city: "Davao"
 country: "PH"
 latitude: 7.11
 longitude: 125.63
-category: "Meetup"
-website: "https://www.meetup.com/durianpy/"
+category: ["Meetup"]
+meetup: "https://www.meetup.com/durianpy/"
 description: "What We're About DurianPy is a volunteer-driven, non-profit organization dedicated to supporting and nurturing the growth of the Python programming community in Davao City."
 image: ./image.jpeg
 ---

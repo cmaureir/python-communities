@@ -4,8 +4,8 @@ city: "Nairobi"
 country: "KE"
 latitude: -1.29
 longitude: 36.82
-category: "Meetup"
-website: "https://www.meetup.com/python-nairobi/"
+category: ["Meetup"]
+meetup: "https://www.meetup.com/python-nairobi/"
 description: "The Python Nairobi User Group is a community of software developers and enthusiasts in Nairobi, Kenya, who are passionate about the Python programming language."
 image: ./image.jpeg
 ---

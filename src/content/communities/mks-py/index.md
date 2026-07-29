@@ -4,8 +4,8 @@ city: "Makassar"
 country: "ID"
 latitude: -5.14
 longitude: 119.41
-category: "Meetup"
-website: "https://www.meetup.com/mks-py/"
+category: ["Meetup"]
+meetup: "https://www.meetup.com/mks-py/"
 description: "Ini group untuk berkumpul teman-teman di Makassar (dan kota sekitar) yang tertarik belajar dan berbagi tentang pemrograman dengan menggunakan Python."
 image: ./image.jpeg
 ---

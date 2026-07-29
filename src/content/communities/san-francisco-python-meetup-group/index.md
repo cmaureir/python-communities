@@ -4,8 +4,9 @@ city: "San Francisco"
 country: "US"
 latitude: 37.77
 longitude: -122.44
-category: "Meetup"
-website: "https://www.meetup.com/sfpython/"
+category: ["Meetup", "Luma"]
+meetup: "https://www.meetup.com/sfpython/"
+luma: "https://luma.com/sfpython"
 description: "Enhancing the Python community and ecosystems, one developer focused event at a time."
 image: ./image.jpeg
 ---

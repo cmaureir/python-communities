@@ -4,8 +4,8 @@ city: "Chiang Mai"
 country: "TH"
 latitude: 18.8
 longitude: 98.98
-category: "PyData"
-website: "https://www.meetup.com/pydata-chiang-mai/"
+category: ["PyData"]
+meetup: "https://www.meetup.com/pydata-chiang-mai/"
 description: "PyData Chiang Mai is a community of data enthusiasts, researchers, and developers who use Python and open-source tools for data science, machine learning, and AI."
 image: ./image.jpeg
 ---

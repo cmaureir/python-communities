@@ -4,8 +4,8 @@ city: "Helsinki"
 country: "FI"
 latitude: 60.17
 longitude: 24.94
-category: "Meetup"
-website: "https://www.meetup.com/helpy-meetups/"
+category: ["Meetup"]
+meetup: "https://www.meetup.com/helpy-meetups/"
 description: "A local Python user group for the Greater Helsinki region meeting up roughly every month."
 image: ./image.jpeg
 ---

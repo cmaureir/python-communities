@@ -4,8 +4,8 @@ city: "Cincinnati"
 country: "US"
 latitude: 39.11
 longitude: -84.5
-category: "Meetup"
-website: "https://www.meetup.com/cincypy/"
+category: ["Meetup"]
+meetup: "https://www.meetup.com/cincypy/"
 description: "Promoting the use of Python and Python-related technologies in the Cincinnati development scene."
 image: ./image.jpeg
 ---

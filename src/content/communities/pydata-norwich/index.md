@@ -4,8 +4,8 @@ city: "Norwich"
 country: "GB"
 latitude: 52.65
 longitude: 1.28
-category: "PyData"
-website: "https://www.meetup.com/pydata-norwich/"
+category: ["PyData"]
+meetup: "https://www.meetup.com/pydata-norwich/"
 description: "PyData Norwich is a community of Python and Data Science professionals in Norwich, UK."
 image: ./image.jpeg
 ---

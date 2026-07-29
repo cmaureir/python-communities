@@ -4,8 +4,8 @@ city: "Toronto"
 country: "CA"
 latitude: 43.65
 longitude: -79.38
-category: "Meetup"
-website: "https://www.meetup.com/python-toronto/"
+category: ["Meetup"]
+meetup: "https://www.meetup.com/python-toronto/"
 description: "Calling all Toronto Pythonistas!"
 image: ./image.jpeg
 ---

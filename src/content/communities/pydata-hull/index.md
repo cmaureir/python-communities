@@ -4,8 +4,8 @@ city: "Hull"
 country: "GB"
 latitude: 53.74
 longitude: -0.33
-category: "PyData"
-website: "https://www.meetup.com/pydata-hull/"
+category: ["PyData"]
+meetup: "https://www.meetup.com/pydata-hull/"
 description: "PyData Hull is an educational program of NumFOCUS, a 501(c)3 non-profit organization."
 image: ./image.jpeg
 ---

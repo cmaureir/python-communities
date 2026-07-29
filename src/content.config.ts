@@ -9,10 +9,12 @@ const communitiesCollection = defineCollection({
     country: z.string(),
     latitude: z.number(),
     longitude: z.number(),
-    category: z.string(),
+    category: z.array(z.string()).min(1),
     description: z.string().optional(),
     image: image().optional(),
     website: z.string().optional(),
+    meetup: z.string().optional(),
+    luma: z.string().optional(),
     inactive: z.enum(['yes', 'no']).optional(),
   }),
 });

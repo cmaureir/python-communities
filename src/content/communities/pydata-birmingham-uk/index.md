@@ -4,8 +4,8 @@ city: "Birmingham"
 country: "GB"
 latitude: 52.48
 longitude: -1.91
-category: "PyData"
-website: "https://www.meetup.com/pydata-birmingham-uk/"
+category: ["PyData"]
+meetup: "https://www.meetup.com/pydata-birmingham-uk/"
 description: "PyData provides a forum for the international community of users and developers of data analysis tools to share ideas and learn from each other."
 image: ./image.jpeg
 ---

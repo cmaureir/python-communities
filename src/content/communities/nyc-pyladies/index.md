@@ -4,8 +4,8 @@ city: "New York"
 country: "US"
 latitude: 40.75
 longitude: -73.99
-category: "PyLadies"
-website: "https://www.meetup.com/nyc-pyladies/"
+category: ["PyLadies"]
+meetup: "https://www.meetup.com/nyc-pyladies/"
 description: "A group for Python ladies and non-binary people of all levels of programming experience, in the NYC metro area."
 image: ./image.jpeg
 ---

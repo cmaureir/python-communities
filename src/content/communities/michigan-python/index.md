@@ -4,8 +4,8 @@ city: "Ann Arbor"
 country: "US"
 latitude: 42.27
 longitude: -83.81
-category: "Meetup"
-website: "https://www.meetup.com/michigan-python/"
+category: ["Meetup"]
+meetup: "https://www.meetup.com/michigan-python/"
 description: "The Michigan Python users group."
 image: ./image.jpeg
 ---

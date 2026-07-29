@@ -4,7 +4,7 @@ city: "Turku"
 country: "FI"
 latitude: 60.4518
 longitude: 22.2666
-category: "Meetup"
+category: ["Meetup"]
 website: "https://www.meetabit.com/communities/archipylago"
 description: "A friendly neighbourhood Python community in Turku, Finland, organizing meetups, sprints, and casual gatherings for Pythonistas of all skill levels."
 image: ./image.png

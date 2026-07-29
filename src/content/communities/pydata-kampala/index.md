@@ -4,8 +4,8 @@ city: "Kampala"
 country: "UG"
 latitude: 0.32
 longitude: 32.58
-category: "PyData"
-website: "https://www.meetup.com/PyData-Kampala/"
+category: ["PyData"]
+meetup: "https://www.meetup.com/PyData-Kampala/"
 description: "PyData is a group for users and developers of data and datascience tools to share ideas and learn from each other."
 image: ./image.jpeg
 ---

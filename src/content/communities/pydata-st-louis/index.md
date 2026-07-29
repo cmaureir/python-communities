@@ -4,8 +4,8 @@ city: "Saint Louis"
 country: "US"
 latitude: 38.63
 longitude: -90.19
-category: "PyData"
-website: "https://www.meetup.com/pydata-st-louis/"
+category: ["PyData"]
+meetup: "https://www.meetup.com/pydata-st-louis/"
 description: "PyData St."
 image: ./image.jpeg
 ---

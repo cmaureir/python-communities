@@ -4,8 +4,8 @@ city: "Auckland"
 country: "NZ"
 latitude: -36.85
 longitude: 174.76
-category: "Meetup"
-website: "https://www.meetup.com/pythonnz-online/"
+category: ["Meetup"]
+meetup: "https://www.meetup.com/pythonnz-online/"
 description: "This is a group for anyone interested in the Python programming language."
 image: ./image.jpeg
 ---

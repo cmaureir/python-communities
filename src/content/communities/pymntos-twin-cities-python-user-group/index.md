@@ -4,8 +4,8 @@ city: "Minneapolis"
 country: "US"
 latitude: 44.98
 longitude: -93.27
-category: "Meetup"
-website: "https://www.meetup.com/pymntos-twin-cities-python-user-group/"
+category: ["Meetup"]
+meetup: "https://www.meetup.com/pymntos-twin-cities-python-user-group/"
 description: "About PyMNtos PyMNtos (pronounced pie-min-tose) is a Twin Cities group of Python enthusiasts."
 image: ./image.jpeg
 ---

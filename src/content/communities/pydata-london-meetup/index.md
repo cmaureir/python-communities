@@ -4,8 +4,9 @@ city: "London"
 country: "GB"
 latitude: 51.52
 longitude: -0.09
-category: "PyData"
-website: "https://www.meetup.com/pydata-london-meetup/"
+category: ["PyData"]
+website: "https://london.pydata.org/"
+meetup: "https://www.meetup.com/pydata-london-meetup/"
 description: "london.pydata.org Submit a talk: https://london.pydata.org/submit-a-talk/ PyData is an educational program of NumFOCUS, a 501(c)3 non-profit organization in the United States."
 image: ./image.jpeg
 ---

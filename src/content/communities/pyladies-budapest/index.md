@@ -4,8 +4,8 @@ city: "Budapest"
 country: "HU"
 latitude: 47.51
 longitude: 19.08
-category: "PyLadies"
-website: "https://www.meetup.com/pyladies-budapest/"
+category: ["PyLadies"]
+meetup: "https://www.meetup.com/pyladies-budapest/"
 description: "A Python meetup group based in Budapest."
 image: ./image.jpeg
 ---

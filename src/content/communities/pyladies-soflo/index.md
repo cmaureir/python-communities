@@ -4,8 +4,8 @@ city: "Miami"
 country: "US"
 latitude: 25.73
 longitude: -80.24
-category: "PyLadies"
-website: "https://www.meetup.com/pyladies-soflo/"
+category: ["PyLadies"]
+meetup: "https://www.meetup.com/pyladies-soflo/"
 description: "PyLadies SoFlo is a mentoring group with a focus on nurturing diversity in the South Florida Python community."
 image: ./image.png
 ---

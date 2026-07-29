@@ -4,8 +4,8 @@ city: "Bydgoszcz"
 country: "PL"
 latitude: 53.12
 longitude: 18.01
-category: "PyData"
-website: "https://www.meetup.com/pydata-bydgoszcz/"
+category: ["PyData"]
+meetup: "https://www.meetup.com/pydata-bydgoszcz/"
 description: "Grupa dla zainteresowanych Pythonem, uczeniem maszynowym, manipulowaniem danymi i nie tylko!"
 image: ./image.jpeg
 ---

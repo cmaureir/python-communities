@@ -4,8 +4,8 @@ city: "Riverside"
 country: "US"
 latitude: 33.98
 longitude: -117.33
-category: "Meetup"
-website: "https://www.meetup.com/iepython/"
+category: ["Meetup"]
+meetup: "https://www.meetup.com/iepython/"
 description: "A Python meetup group based in Riverside."
 image: ./image.png
 ---

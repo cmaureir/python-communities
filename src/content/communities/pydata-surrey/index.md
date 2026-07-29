@@ -4,8 +4,8 @@ city: "Woking"
 country: "GB"
 latitude: 51.32
 longitude: -0.56
-category: "PyData"
-website: "https://www.meetup.com/pydata-surrey/"
+category: ["PyData"]
+meetup: "https://www.meetup.com/pydata-surrey/"
 description: "The Surrey chapter of the global PyData community, for AI and data science enthusiasts using Python, R, and Julia."
 ---
 

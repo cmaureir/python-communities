@@ -4,8 +4,8 @@ city: "Yerevan"
 country: "AM"
 latitude: 40.17
 longitude: 44.52
-category: "PyData"
-website: "https://www.meetup.com/pydata-yerevan/"
+category: ["PyData"]
+meetup: "https://www.meetup.com/pydata-yerevan/"
 description: "A Python meetup group based in Yerevan."
 image: ./image.jpeg
 ---

@@ -4,8 +4,8 @@ city: "Vilnius"
 country: "LT"
 latitude: 54.7
 longitude: 25.27
-category: "Meetup"
-website: "https://www.meetup.com/vilniuspy/"
+category: ["Meetup"]
+meetup: "https://www.meetup.com/vilniuspy/"
 description: "Vilnius Python is a group for people interested in Python programming language and surrounding ecosystem."
 image: ./image.jpeg
 ---

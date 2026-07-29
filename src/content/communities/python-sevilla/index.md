@@ -4,8 +4,8 @@ city: "Sevilla"
 country: "ES"
 latitude: 37.4
 longitude: -5.98
-category: "Meetup"
-website: "https://www.meetup.com/python-sevilla/"
+category: ["Meetup"]
+meetup: "https://www.meetup.com/python-sevilla/"
 description: "Grupo de apasionados, profesionales o entusiastas del lenguaje de programación Python en la ciudad de Sevilla."
 image: ./image.jpeg
 ---

@@ -4,8 +4,8 @@ city: "Panamá"
 country: "PA"
 latitude: 8.97
 longitude: -79.53
-category: "PyData"
-website: "https://www.meetup.com/pydata-panama/"
+category: ["PyData"]
+meetup: "https://www.meetup.com/pydata-panama/"
 description: "PyData es un programa educativo de NumFOCUS, una organización sin fines de lucro 501(c)3."
 image: ./image.jpeg
 ---

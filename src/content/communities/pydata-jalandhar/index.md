@@ -4,8 +4,8 @@ city: "Jalandhar"
 country: "IN"
 latitude: 31.33
 longitude: 75.57
-category: "PyData"
-website: "https://www.meetup.com/PyData-Jalandhar/"
+category: ["PyData"]
+meetup: "https://www.meetup.com/PyData-Jalandhar/"
 description: "PyData is an educational program of NumFOCUS, a 501(c)3 non-profit organization in the United States."
 image: ./image.jpeg
 ---

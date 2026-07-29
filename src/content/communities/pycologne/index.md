@@ -4,8 +4,8 @@ city: "Cologne"
 country: "DE"
 latitude: 50.94
 longitude: 6.96
-category: "Meetup"
-website: "https://www.meetup.com/pycologne/"
+category: ["Meetup"]
+meetup: "https://www.meetup.com/pycologne/"
 description: "PyCologne warmly welcomes everyone passionate about Python, regardless of expertise level."
 image: ./image.jpeg
 ---

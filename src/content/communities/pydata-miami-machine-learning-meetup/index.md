@@ -4,8 +4,8 @@ city: "Miami"
 country: "US"
 latitude: 25.78
 longitude: -80.2
-category: "PyData"
-website: "https://www.meetup.com/Miami-Machine-Learning-Meetup/"
+category: ["PyData"]
+meetup: "https://www.meetup.com/Miami-Machine-Learning-Meetup/"
 description: "Meetup group for researchers, students, and hobbyists in machine learning, neural networks, and statistics."
 image: ./image.jpeg
 ---

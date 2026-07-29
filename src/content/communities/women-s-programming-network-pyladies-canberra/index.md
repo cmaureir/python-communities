@@ -4,8 +4,8 @@ city: "Canberra"
 country: "AU"
 latitude: -35.31
 longitude: 149.13
-category: "PyLadies"
-website: "https://www.meetup.com/pyladies-canberra/"
+category: ["PyLadies"]
+meetup: "https://www.meetup.com/pyladies-canberra/"
 description: "Technical Women in Canberra!"
 image: ./image.jpeg
 ---

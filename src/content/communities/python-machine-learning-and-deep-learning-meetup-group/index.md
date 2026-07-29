@@ -4,8 +4,8 @@ city: "Paris"
 country: "FR"
 latitude: 48.86
 longitude: 2.34
-category: "Meetup"
-website: "https://www.meetup.com/paris-python-machine-learning-deep-learning-meetup-group/"
+category: ["Meetup"]
+meetup: "https://www.meetup.com/paris-python-machine-learning-deep-learning-meetup-group/"
 description: "A propos Bienvenue au groupe Meetup Python, Machine Learning & Deep Learning !"
 image: ./image.jpeg
 ---

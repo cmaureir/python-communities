@@ -2,7 +2,7 @@
 title: "Python Ghana"
 city: "Accra"
 country: "GH"
-category: "Organization"
+category: ["Organization"]
 website: "https://www.pythonghana.org/"
 latitude: 5.614818
 longitude: -0.205874

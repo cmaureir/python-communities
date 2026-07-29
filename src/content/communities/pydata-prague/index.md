@@ -4,8 +4,8 @@ city: "Prague"
 country: "CZ"
 latitude: 50.08
 longitude: 14.43
-category: "PyData"
-website: "https://www.meetup.com/PyData-Prague/"
+category: ["PyData"]
+meetup: "https://www.meetup.com/PyData-Prague/"
 description: "PyData Prague aims to unite data analysts, engineers, scientists, and others involved in the usage, developments, and support of open source technologies in the area of scientific computation."
 image: ./image.jpeg
 ---

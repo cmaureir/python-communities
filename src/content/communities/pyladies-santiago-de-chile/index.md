@@ -4,8 +4,8 @@ city: "Santiago"
 country: "CL"
 latitude: -33.46
 longitude: -70.64
-category: "PyLadies"
-website: "https://www.meetup.com/pyladies-santiago-de-chile/"
+category: ["PyLadies"]
+meetup: "https://www.meetup.com/pyladies-santiago-de-chile/"
 description: "Comunidad Pyladies de la ciudad Santiago de Chile, enfocada en promover la participación y el incremento de más mujeres a la tecnología y el código con Python."
 image: ./image.png
 ---

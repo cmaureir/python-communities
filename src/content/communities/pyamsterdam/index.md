@@ -4,8 +4,8 @@ city: "Amsterdam"
 country: "NL"
 latitude: 52.37
 longitude: 4.89
-category: "Meetup"
-website: "https://www.meetup.com/pyamsterdam/"
+category: ["Meetup"]
+meetup: "https://www.meetup.com/pyamsterdam/"
 description: "This group is for everyone passionate about the Python programming language and its amazing community!"
 image: ./image.jpeg
 ---

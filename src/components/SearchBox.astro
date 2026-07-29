@@ -5,7 +5,7 @@ interface Item {
   title: string;
   city: string;
   country: string;
-  category: string;
+  category: string[];
   description?: string;
 }
 
@@ -40,7 +40,7 @@ const { items, categories, countries, countryNames } = Astro.props;
       // Filter by category
       if (this.selectedCategory !== 'all') {
         filtered = filtered.filter(item =>
-          item.category === this.selectedCategory
+          item.category.includes(this.selectedCategory)
         );
       }
 
@@ -58,7 +58,7 @@ const { items, categories, countries, countryNames } = Astro.props;
           item.title.toLowerCase().includes(query) ||
           item.city.toLowerCase().includes(query) ||
           item.country.toLowerCase().includes(query) ||
-          item.category.toLowerCase().includes(query) ||
+          item.category.some(cat => cat.toLowerCase().includes(query)) ||
           (item.description && item.description.toLowerCase().includes(query))
         );
       }
@@ -171,7 +171,7 @@ const { items, categories, countries, countryNames } = Astro.props;
                   <div class="text-sm text-gray-500 dark:text-zinc-400 mt-1">
                     <span x-text="item.city"></span>
                     <span class="mx-2">•</span>
-                    <span x-text="item.category"></span>
+                    <span x-text="item.category.join(', ')"></span>
                   </div>
                 </button>
               </template>

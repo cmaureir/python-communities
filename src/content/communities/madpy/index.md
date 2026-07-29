@@ -4,8 +4,8 @@ city: "Madison"
 country: "US"
 latitude: 43.08
 longitude: -89.38
-category: "Meetup"
-website: "https://www.meetup.com/madison-python/"
+category: ["Meetup"]
+meetup: "https://www.meetup.com/madison-python/"
 description: "MadPy is a community group of python enthusiasts."
 image: ./image.png
 ---

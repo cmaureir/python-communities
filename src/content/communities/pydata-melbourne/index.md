@@ -4,8 +4,8 @@ city: "Melbourne"
 country: "AU"
 latitude: -37.81
 longitude: 144.96
-category: "PyData"
-website: "https://www.meetup.com/pydata-melbourne/"
+category: ["PyData"]
+meetup: "https://www.meetup.com/pydata-melbourne/"
 description: "PyData Melbourne is a chapter of the International PyData Community."
 image: ./image.jpeg
 ---

@@ -4,8 +4,8 @@ city: "Columbus"
 country: "US"
 latitude: 39.99
 longitude: -83.04
-category: "Meetup"
-website: "https://www.meetup.com/central-ohio-python-users-group/"
+category: ["Meetup"]
+meetup: "https://www.meetup.com/central-ohio-python-users-group/"
 description: "A group for Python users and learners in Columbus, Ohio, with monthly meetings and mailing list discussions."
 image: ./image.png
 ---

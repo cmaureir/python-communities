@@ -4,8 +4,8 @@ city: "Girona"
 country: "ES"
 latitude: 41.98
 longitude: 2.81
-category: "Meetup"
-website: "https://www.meetup.com/pythongirona/"
+category: ["Meetup"]
+meetup: "https://www.meetup.com/pythongirona/"
 description: "🐍🎉 Som una comunitat diversa de Girona, apassionades i apassionats pel llenguatge de programació Python!"
 image: ./image.jpeg
 ---

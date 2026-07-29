@@ -4,8 +4,8 @@ city: "Santo Domingo"
 country: "DO"
 latitude: 18.48
 longitude: -69.91
-category: "Meetup"
-website: "https://www.meetup.com/pythonsdq/"
+category: ["Meetup"]
+meetup: "https://www.meetup.com/pythonsdq/"
 description: "¡Bienvenidos a PythonSDQ!"
 image: ./image.jpeg
 ---

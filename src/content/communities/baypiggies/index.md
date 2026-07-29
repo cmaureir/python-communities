@@ -4,8 +4,8 @@ city: "Mountain View"
 country: "US"
 latitude: 37.41
 longitude: -122.08
-category: "Meetup"
-website: "https://www.meetup.com/baypiggies/"
+category: ["Meetup"]
+meetup: "https://www.meetup.com/baypiggies/"
 description: "The Bay Area Python Interest Group (BAyPIGgies) was formed in July 1999."
 image: ./image.jpeg
 ---

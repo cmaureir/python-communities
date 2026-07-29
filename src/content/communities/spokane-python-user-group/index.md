@@ -4,8 +4,9 @@ city: "Spokane"
 country: "US"
 latitude: 47.67
 longitude: -117.43
-category: "Meetup"
-website: "https://www.meetup.com/python-spokane/"
+category: ["Meetup"]
+website: "https://spokanepython.com/"
+meetup: "https://www.meetup.com/python-spokane/"
 description: "You can find our homepage at https://spokanepython.com/."
 image: ./image.jpeg
 ---

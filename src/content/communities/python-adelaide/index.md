@@ -4,8 +4,8 @@ city: "Adelaide"
 country: "AU"
 latitude: -34.93
 longitude: 138.6
-category: "Meetup"
-website: "https://www.meetup.com/pythonadelaide/"
+category: ["Meetup"]
+meetup: "https://www.meetup.com/pythonadelaide/"
 description: "Python Adelaide is a group for anybody interested in the Python Programming Language, who happen to be geographically located in close proximity to Adelaide."
 image: ./image.png
 ---

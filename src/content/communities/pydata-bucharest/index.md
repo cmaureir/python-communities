@@ -4,8 +4,8 @@ city: "Bucharest"
 country: "RO"
 latitude: 44.43
 longitude: 26.1
-category: "PyData"
-website: "https://www.meetup.com/pydata-bucharest/"
+category: ["PyData"]
+meetup: "https://www.meetup.com/pydata-bucharest/"
 description: "The Bucharest chapter of the global PyData community, for AI and data science enthusiasts using Python, R, and Julia."
 ---
 

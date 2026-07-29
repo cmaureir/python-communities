@@ -4,8 +4,8 @@ city: "Mandaluyong"
 country: "PH"
 latitude: 14.58
 longitude: 121.04
-category: "PyData"
-website: "https://www.meetup.com/data-engineering-pilipinas/"
+category: ["PyData"]
+meetup: "https://www.meetup.com/data-engineering-pilipinas/"
 description: "Data Engineering Pilipinas is a community for data engineers, data analysts, data scientists, developers, AI / ML engineers, and users of closed and open source data tools and methods / techniques in the Philippines."
 image: ./image.jpeg
 ---

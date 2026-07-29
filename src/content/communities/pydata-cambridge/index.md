@@ -4,8 +4,8 @@ city: "Cambridge"
 country: "GB"
 latitude: 52.21
 longitude: 0.13
-category: "PyData"
-website: "https://www.meetup.com/pydata-cambridge-meetup/"
+category: ["PyData"]
+meetup: "https://www.meetup.com/pydata-cambridge-meetup/"
 description: "PyData Cambridge is our local PyData meetup chapter."
 image: ./image.jpeg
 ---

@@ -4,8 +4,8 @@ city: "Santa Barbara"
 country: "US"
 latitude: 34.42
 longitude: -119.71
-category: "Meetup"
-website: "https://www.meetup.com/central-coast-python/"
+category: ["Meetup"]
+meetup: "https://www.meetup.com/central-coast-python/"
 description: "This group is about the Python programming language and its applications."
 image: ./image.jpeg
 ---

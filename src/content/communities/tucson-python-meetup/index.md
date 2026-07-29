@@ -4,8 +4,8 @@ city: "Tucson"
 country: "US"
 latitude: 32.22
 longitude: -110.97
-category: "Meetup"
-website: "https://www.meetup.com/Tucson-Python-Meetup/"
+category: ["Meetup"]
+meetup: "https://www.meetup.com/Tucson-Python-Meetup/"
 description: "Please join us on Slack: http://bit.ly/tupleslack The goal of this group is to encourage more mingling, learning and sharing ideas within the Tucson Python community."
 image: ./image.png
 ---

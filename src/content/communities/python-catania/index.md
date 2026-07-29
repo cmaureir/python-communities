@@ -4,8 +4,8 @@ city: "Catania"
 country: "IT"
 latitude: 37.5
 longitude: 15.09
-category: "Meetup"
-website: "https://www.meetup.com/python-catania/"
+category: ["Meetup"]
+meetup: "https://www.meetup.com/python-catania/"
 description: "Python Catania è la community di appassionati e sviluppatori Python che vivono e lavorano nel territorio della provincia di Catania."
 image: ./image.jpeg
 ---

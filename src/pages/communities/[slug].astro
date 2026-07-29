@@ -43,8 +43,16 @@ const { Content } = await render(community);
       <h1 class="text-4xl font-bold mb-4">{community.data.title}</h1>
       <div class="flex gap-4 text-gray-600 dark:text-gray-400">
         <span>📍 {community.data.city}, {community.data.country}</span>
-        <span>🏷️ {community.data.category}</span>
-        <span>🌐 <a href="{community.data.website}">{community.data.website}</a></span>
+        <span>🏷️ {community.data.category.join(', ')}</span>
+        {community.data.website && (
+          <span>🌐 <a href={community.data.website} class="hover:underline">{community.data.website}</a></span>
+        )}
+        {community.data.meetup && (
+          <span>🤝 <a href={community.data.meetup} class="hover:underline">{community.data.meetup}</a></span>
+        )}
+        {community.data.luma && (
+          <span>📅 <a href={community.data.luma} class="hover:underline">{community.data.luma}</a></span>
+        )}
       </div>
       {community.data.description && (
         <blockquote class="text-xl text-gray-700 dark:text-gray-300 mt-4">{community.data.description}</blockquote>

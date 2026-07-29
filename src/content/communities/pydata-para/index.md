@@ -4,8 +4,8 @@ city: "Belém"
 country: "BR"
 latitude: -1.46
 longitude: -48.5
-category: "PyData"
-website: "https://www.meetup.com/pydata-para/"
+category: ["PyData"]
+meetup: "https://www.meetup.com/pydata-para/"
 description: "A Python meetup group based in Belém."
 image: ./image.jpeg
 ---

@@ -4,8 +4,8 @@ city: "San Francisco"
 country: "US"
 latitude: 37.77
 longitude: -122.41
-category: "Meetup"
-website: "https://www.meetup.com/the-san-francisco-django-meetup-group/"
+category: ["Meetup"]
+meetup: "https://www.meetup.com/the-san-francisco-django-meetup-group/"
 description: "Django is a high-level Python Web framework that encourages rapid development and clean, pragmatic design."
 image: ./image.jpeg
 ---

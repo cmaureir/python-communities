@@ -4,8 +4,8 @@ city: "Tallinn"
 country: "EE"
 latitude: 59.44
 longitude: 24.74
-category: "PyData"
-website: "https://www.meetup.com/pydata-tallinn/"
+category: ["PyData"]
+meetup: "https://www.meetup.com/pydata-tallinn/"
 description: "Welcome to PyData Tallinn!"
 image: ./image.jpeg
 ---

@@ -4,8 +4,8 @@ city: "Port of Spain"
 country: "TT"
 latitude: 10.66
 longitude: -61.51
-category: "PyData"
-website: "https://www.meetup.com/pydata-t-t/"
+category: ["PyData"]
+meetup: "https://www.meetup.com/pydata-t-t/"
 description: "Welcome to PyData T&T (Trinidad and Tobago)."
 image: ./image.jpeg
 ---

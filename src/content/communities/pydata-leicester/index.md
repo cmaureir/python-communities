@@ -4,8 +4,8 @@ city: "Leicester"
 country: "GB"
 latitude: 52.64
 longitude: -1.13
-category: "PyData"
-website: "https://www.meetup.com/test-austin/"
+category: ["PyData"]
+meetup: "https://www.meetup.com/test-austin/"
 description: "A Python meetup group based in Leicester."
 image: ./image.jpeg
 ---

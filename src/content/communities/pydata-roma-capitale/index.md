@@ -4,8 +4,8 @@ city: "Roma"
 country: "IT"
 latitude: 41.9
 longitude: 12.48
-category: "PyData"
-website: "https://www.meetup.com/pydata-roma-capitale/"
+category: ["PyData"]
+meetup: "https://www.meetup.com/pydata-roma-capitale/"
 description: "This is the Rome chapter of PyData, a community for everyone who loves Python, data, or meeting with tech fellows."
 image: ./image.jpeg
 ---

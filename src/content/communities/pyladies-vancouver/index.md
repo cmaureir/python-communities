@@ -4,8 +4,8 @@ city: "Vancouver"
 country: "CA"
 latitude: 49.28
 longitude: -123.04
-category: "PyLadies"
-website: "https://www.meetup.com/pyladies-vancouver/"
+category: ["PyLadies"]
+meetup: "https://www.meetup.com/pyladies-vancouver/"
 description: "Hello and welcome to PyLadies!"
 image: ./image.png
 ---

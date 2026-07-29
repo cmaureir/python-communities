@@ -4,8 +4,8 @@ city: "Calgary"
 country: "CA"
 latitude: 51.04
 longitude: -114.06
-category: "PyData"
-website: "https://www.meetup.com/PyData-Calgary/"
+category: ["PyData"]
+meetup: "https://www.meetup.com/PyData-Calgary/"
 description: "PyData is an educational program of NumFOCUS, a 501(c)3 non-profit organization in the United States."
 image: ./image.jpeg
 ---

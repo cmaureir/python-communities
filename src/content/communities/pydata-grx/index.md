@@ -4,8 +4,8 @@ city: "Granada"
 country: "ES"
 latitude: 37.17
 longitude: -3.59
-category: "PyData"
-website: "https://www.meetup.com/pydatagrx/"
+category: ["PyData"]
+meetup: "https://www.meetup.com/pydatagrx/"
 description: "A Python meetup group based in Granada."
 image: ./image.jpeg
 ---

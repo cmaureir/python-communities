@@ -4,8 +4,8 @@ city: "Christchurch"
 country: "NZ"
 latitude: -43.53
 longitude: 172.64
-category: "Meetup"
-website: "https://www.meetup.com/pythonnz-christchurch/"
+category: ["Meetup"]
+meetup: "https://www.meetup.com/pythonnz-christchurch/"
 description: "This is a group for anyone interested in the Python programming language."
 image: ./image.jpeg
 ---

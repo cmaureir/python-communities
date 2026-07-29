@@ -4,8 +4,8 @@ city: "Glasgow"
 country: "GB"
 latitude: 55.87
 longitude: -4.27
-category: "Meetup"
-website: "https://www.meetup.com/python-glasgow/"
+category: ["Meetup"]
+meetup: "https://www.meetup.com/python-glasgow/"
 description: "Welcome to Python Glasgow, the Python Group for Glaswegian (and nearby) Pythonistas!"
 image: ./image.jpeg
 ---

@@ -4,8 +4,8 @@ city: "Salt Lake City"
 country: "US"
 latitude: 40.73
 longitude: -111.86
-category: "PyLadies"
-website: "https://www.meetup.com/Salt-Lake-Pyladies/"
+category: ["PyLadies"]
+meetup: "https://www.meetup.com/Salt-Lake-Pyladies/"
 description: "We are the Salt Lake City chapter of an international mentorship group with a focus on helping more women become active participants and leaders in the Python open-source community."
 image: ./image.png
 ---

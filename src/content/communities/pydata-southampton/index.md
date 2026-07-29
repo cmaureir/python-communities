@@ -4,8 +4,8 @@ city: "Southampton"
 country: "GB"
 latitude: 50.92
 longitude: -1.42
-category: "PyData"
-website: "https://www.meetup.com/pydata-southampton/"
+category: ["PyData"]
+meetup: "https://www.meetup.com/pydata-southampton/"
 description: "PyData Southampton is the Southampton chapter of the international PyData community."
 image: ./image.jpeg
 ---

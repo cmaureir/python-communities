@@ -4,8 +4,8 @@ city: "Sibiu"
 country: "RO"
 latitude: 45.79
 longitude: 24.13
-category: "PyData"
-website: "https://www.meetup.com/pydata-sibiu-meetup-group/"
+category: ["PyData"]
+meetup: "https://www.meetup.com/pydata-sibiu-meetup-group/"
 description: "This is a group for anyone interested in python, data processing, machine learning, etc."
 image: ./image.jpeg
 ---

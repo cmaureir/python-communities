@@ -4,8 +4,8 @@ city: "Milano"
 country: "IT"
 latitude: 45.46
 longitude: 9.19
-category: "PyData"
-website: "https://www.meetup.com/pydata-milano/"
+category: ["PyData"]
+meetup: "https://www.meetup.com/pydata-milano/"
 description: "We want to bring PyData events in Milan!"
 image: ./image.jpeg
 ---

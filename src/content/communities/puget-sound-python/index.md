@@ -4,8 +4,8 @@ city: "Seattle"
 country: "US"
 latitude: 47.63
 longitude: -122.34
-category: "Meetup"
-website: "https://www.meetup.com/psppython/"
+category: ["Meetup"]
+meetup: "https://www.meetup.com/psppython/"
 description: "A friendly Python user group for the Puget Sound region, welcoming members of all backgrounds and experience levels."
 image: ./image.jpeg
 ---

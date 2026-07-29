@@ -4,8 +4,10 @@ city: "Los Angeles"
 country: "US"
 latitude: 34.06
 longitude: -118.44
-category: "Meetup"
-website: "https://www.meetup.com/socalpython/"
+category: ["Meetup", "Luma"]
+website: "https://socalpython.org/"
+meetup: "https://www.meetup.com/socalpython/"
+luma: "https://luma.com/socalpython"
 description: "Our main website is https://socalpython.org/ To join our Slack group, please message the organizers with a short intro about why you want to join (for spam control), along with your email address."
 image: ./image.png
 ---

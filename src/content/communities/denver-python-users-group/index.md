@@ -4,8 +4,8 @@ city: "Denver"
 country: "US"
 latitude: 39.83
 longitude: -105.01
-category: "Meetup"
-website: "https://www.meetup.com/denverpython/"
+category: ["Meetup"]
+meetup: "https://www.meetup.com/denverpython/"
 description: "Are you a Python or Django developer?"
 image: ./image.jpeg
 ---

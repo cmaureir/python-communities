@@ -4,8 +4,8 @@ city: "Pune"
 country: "IN"
 latitude: 18.53
 longitude: 73.84
-category: "Meetup"
-website: "https://www.meetup.com/PythonPune/"
+category: ["Meetup"]
+meetup: "https://www.meetup.com/PythonPune/"
 description: "This is the community of Python programmers in Pune and beyond."
 image: ./image.jpeg
 ---

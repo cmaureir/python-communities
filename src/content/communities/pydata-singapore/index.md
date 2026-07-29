@@ -4,8 +4,8 @@ city: "Singapore"
 country: "SG"
 latitude: 1.3
 longitude: 103.85
-category: "PyData"
-website: "https://www.meetup.com/PyData-SG/"
+category: ["PyData"]
+meetup: "https://www.meetup.com/PyData-SG/"
 description: "PyData Singapore is a group for users and developers of data analysis tools to share ideas and learn from each other."
 image: ./image.jpeg
 ---

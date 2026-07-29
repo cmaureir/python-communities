@@ -4,8 +4,8 @@ city: "Bangalore"
 country: "IN"
 latitude: 12.97
 longitude: 77.56
-category: "Meetup"
-website: "https://www.meetup.com/bangpypers/"
+category: ["Meetup"]
+meetup: "https://www.meetup.com/bangpypers/"
 description: "Meetup page of the BangPypers group."
 image: ./image.jpeg
 ---

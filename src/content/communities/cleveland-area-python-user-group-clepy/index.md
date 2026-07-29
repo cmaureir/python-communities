@@ -4,8 +4,8 @@ city: "Cleveland"
 country: "US"
 latitude: 41.51
 longitude: -81.68
-category: "Meetup"
-website: "https://www.meetup.com/cleveland-area-python-interest-group/"
+category: ["Meetup"]
+meetup: "https://www.meetup.com/cleveland-area-python-interest-group/"
 description: "This meetup is for anyone with an interest in the Python programming language."
 image: ./image.jpeg
 ---

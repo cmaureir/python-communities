@@ -4,8 +4,8 @@ city: "Chennai"
 country: "IN"
 latitude: 13.09
 longitude: 80.27
-category: "PyData"
-website: "https://www.meetup.com/pydata-omr/"
+category: ["PyData"]
+meetup: "https://www.meetup.com/pydata-omr/"
 description: "PyData is an educational program of NumFOCUS, a 501(c)3 non-profit organization in the United States."
 image: ./image.jpeg
 ---

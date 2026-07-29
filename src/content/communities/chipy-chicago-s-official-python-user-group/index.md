@@ -4,8 +4,8 @@ city: "Chicago"
 country: "US"
 latitude: 41.88
 longitude: -87.64
-category: "Meetup"
-website: "https://www.meetup.com/_chipy_/"
+category: ["Meetup"]
+meetup: "https://www.meetup.com/_chipy_/"
 description: "A Python meetup group based in Chicago."
 image: ./image.jpeg
 ---

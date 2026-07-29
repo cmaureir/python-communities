@@ -4,8 +4,8 @@ city: "Ljubljana"
 country: "SI"
 latitude: 46.06
 longitude: 14.51
-category: "Meetup"
-website: "https://www.meetup.com/Ljubljana-Python-Group/"
+category: ["Meetup"]
+meetup: "https://www.meetup.com/Ljubljana-Python-Group/"
 description: "Pythonistas around Ljubljana city and beyond."
 image: ./image.jpeg
 ---

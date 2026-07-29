@@ -4,8 +4,8 @@ city: "Wolverhampton"
 country: "GB"
 latitude: 52.59
 longitude: -2.15
-category: "PyData"
-website: "https://www.meetup.com/pydata-wolverhampton/"
+category: ["PyData"]
+meetup: "https://www.meetup.com/pydata-wolverhampton/"
 description: "PyData Wolverhampton is a community for anyone interested in data science, machine learning, and Python in the Black Country and wider West Midlands."
 image: ./image.jpeg
 ---

@@ -4,8 +4,8 @@ city: "San Diego"
 country: "US"
 latitude: 32.76
 longitude: -117.2
-category: "Meetup"
-website: "https://www.meetup.com/pythonsd/"
+category: ["Meetup"]
+meetup: "https://www.meetup.com/pythonsd/"
 description: "Are you a Python or Django developer?"
 image: ./image.jpeg
 ---

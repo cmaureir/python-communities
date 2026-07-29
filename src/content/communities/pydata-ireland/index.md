@@ -4,8 +4,8 @@ city: "Dublin"
 country: "IE"
 latitude: 53.33
 longitude: -6.25
-category: "PyData"
-website: "https://www.meetup.com/pydataireland/"
+category: ["PyData"]
+meetup: "https://www.meetup.com/pydataireland/"
 description: "PyData provides a forum for the international community of users and developers of data analysis tools to share ideas and learn from each other."
 image: ./image.jpeg
 ---

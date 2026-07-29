@@ -4,8 +4,8 @@ city: "Reston"
 country: "US"
 latitude: 38.96
 longitude: -77.34
-category: "Meetup"
-website: "https://www.meetup.com/nova-python/"
+category: ["Meetup"]
+meetup: "https://www.meetup.com/nova-python/"
 description: "NOVA-PYTHON We talk about building applications using Python."
 image: ./image.jpeg
 ---

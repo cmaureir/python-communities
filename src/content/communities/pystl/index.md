@@ -4,8 +4,8 @@ city: "Saint Louis"
 country: "US"
 latitude: 38.64
 longitude: -90.25
-category: "Meetup"
-website: "https://www.meetup.com/python-stlouis/"
+category: ["Meetup"]
+meetup: "https://www.meetup.com/python-stlouis/"
 description: "PySTL is a community organization dedicated to the Python programming language."
 image: ./image.jpeg
 ---

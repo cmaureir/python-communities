@@ -4,8 +4,8 @@ city: "Rio de Janeiro"
 country: "BR"
 latitude: -22.91
 longitude: -43.2
-category: "PyData"
-website: "https://www.meetup.com/PyData-Rio/"
+category: ["PyData"]
+meetup: "https://www.meetup.com/PyData-Rio/"
 description: "PyData is an educational program of NumFOCUS, a 501(c)3 non-profit organization in the United States."
 image: ./image.jpeg
 ---

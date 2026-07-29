@@ -4,8 +4,8 @@ city: "Montréal"
 country: "CA"
 latitude: 45.65
 longitude: -73.5
-category: "PyData"
-website: "https://www.meetup.com/PyData-MTL/"
+category: ["PyData"]
+meetup: "https://www.meetup.com/PyData-MTL/"
 description: "\\\\English to follow\\\\ Toute personne pratiquant ou apprenant la science des données, l'analyse, l'apprentissage automatique et/ou l'apprentissage en profondeur avec Python est la bienvenue !"
 image: ./image.png
 ---

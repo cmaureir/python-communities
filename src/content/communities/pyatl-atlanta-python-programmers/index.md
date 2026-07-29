@@ -4,8 +4,9 @@ city: "Atlanta"
 country: "US"
 latitude: 33.86
 longitude: -84.4
-category: "Meetup"
-website: "https://www.meetup.com/python-atlanta/"
+category: ["Meetup"]
+website: "https://pyatl.dev/"
+meetup: "https://www.meetup.com/python-atlanta/"
 description: "Please read our code of conduct here: https://pyatl.dev/code-of-conduct/ PyAtl meets every month in Atlanta for presentations and discussion about Python, the powerful and easy-to-use programming language."
 image: ./image.png
 ---

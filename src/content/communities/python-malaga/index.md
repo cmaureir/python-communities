@@ -4,8 +4,8 @@ city: "Málaga"
 country: "ES"
 latitude: 36.72
 longitude: -4.42
-category: "Meetup"
-website: "https://www.meetup.com/python_malaga/"
+category: ["Meetup"]
+meetup: "https://www.meetup.com/python_malaga/"
 description: "💬 Charlas, talleres, eventos de networking..."
 image: ./image.png
 ---

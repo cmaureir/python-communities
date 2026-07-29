@@ -4,8 +4,8 @@ city: "Los Angeles"
 country: "US"
 latitude: 34.04
 longitude: -118.25
-category: "PyLadies"
-website: "https://www.meetup.com/Pyladies-LA/"
+category: ["PyLadies"]
+meetup: "https://www.meetup.com/Pyladies-LA/"
 description: "A Python meetup group based in Los Angeles."
 image: ./image.jpeg
 ---

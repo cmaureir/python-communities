@@ -4,8 +4,8 @@ city: "Bari"
 country: "IT"
 latitude: 41.13
 longitude: 16.87
-category: "Meetup"
-website: "https://www.meetup.com/python-bari/"
+category: ["Meetup"]
+meetup: "https://www.meetup.com/python-bari/"
 description: "We organize tech talks, live coding sessions, and social events about Python and its ecosystem."
 image: ./image.jpeg
 ---

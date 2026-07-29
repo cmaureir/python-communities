@@ -4,8 +4,8 @@ city: "Istanbul"
 country: "TR"
 latitude: 41.01
 longitude: 28.96
-category: "PyData"
-website: "https://www.meetup.com/pydata-turkiye/"
+category: ["PyData"]
+meetup: "https://www.meetup.com/pydata-turkiye/"
 description: "PyData Türkiye is a local chapter of the global PyData community, dedicated to bringing together data enthusiasts, professionals, and researchers from Turkiye."
 image: ./image.jpeg
 ---

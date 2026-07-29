@@ -4,8 +4,8 @@ city: "Taipei"
 country: "TW"
 latitude: 25.02
 longitude: 121.45
-category: "Meetup"
-website: "https://www.meetup.com/taipei_py/"
+category: ["Meetup"]
+meetup: "https://www.meetup.com/taipei_py/"
 description: "A Python meetup group based in Taipei."
 image: ./image.jpeg
 ---

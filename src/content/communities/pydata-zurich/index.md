@@ -4,8 +4,8 @@ city: "Zürich"
 country: "CH"
 latitude: 47.38
 longitude: 8.54
-category: "PyData"
-website: "https://www.meetup.com/PyData-Zurich/"
+category: ["PyData"]
+meetup: "https://www.meetup.com/PyData-Zurich/"
 description: "Anybody that appreciates the PyData/NumFOCUS mission - Bringing the world of open source data science & scientific users together!"
 image: ./image.jpeg
 ---

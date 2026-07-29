@@ -4,8 +4,8 @@ city: "Richmond"
 country: "US"
 latitude: 37.54
 longitude: -77.44
-category: "Meetup"
-website: "https://www.meetup.com/PyRVAUserGroup/"
+category: ["Meetup"]
+meetup: "https://www.meetup.com/PyRVAUserGroup/"
 description: "A Python community in Richmond, Virginia, organizing talks, hackathons, and workshops."
 ---
 

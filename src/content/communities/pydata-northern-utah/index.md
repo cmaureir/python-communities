@@ -4,8 +4,8 @@ city: "Logan"
 country: "US"
 latitude: 41.74
 longitude: -111.67
-category: "PyData"
-website: "https://www.meetup.com/pydata-northern-utah/"
+category: ["PyData"]
+meetup: "https://www.meetup.com/pydata-northern-utah/"
 description: "PyData is a forum for users and developers of data analysis tools to learn from each other."
 image: ./image.jpeg
 ---

@@ -4,8 +4,8 @@ city: "Medellín"
 country: "CO"
 latitude: 6.25
 longitude: -75.59
-category: "Meetup"
-website: "https://www.meetup.com/python-medellin/"
+category: ["Meetup"]
+meetup: "https://www.meetup.com/python-medellin/"
 description: "An open community for anyone interested in learning Python and its ecosystem, based in Medellín, Colombia."
 image: ./image.jpeg
 ---

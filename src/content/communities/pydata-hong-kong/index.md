@@ -4,8 +4,8 @@ city: "Hong Kong"
 country: "HK"
 latitude: 22.27
 longitude: 114.14
-category: "PyData"
-website: "https://www.meetup.com/PyData-Hong-Kong/"
+category: ["PyData"]
+meetup: "https://www.meetup.com/PyData-Hong-Kong/"
 description: "PyData is an educational program of NumFOCUS, a 501(c)3 non-profit organization in the United States."
 image: ./image.png
 ---

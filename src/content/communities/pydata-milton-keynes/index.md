@@ -4,8 +4,8 @@ city: "Milton Keynes"
 country: "GB"
 latitude: 52.02
 longitude: -0.75
-category: "PyData"
-website: "https://www.meetup.com/pydata-milton-keynes/"
+category: ["PyData"]
+meetup: "https://www.meetup.com/pydata-milton-keynes/"
 description: "PyData is an educational program of NumFOCUS, a 501(c)3 non-profit organization in the United States."
 image: ./image.jpeg
 ---

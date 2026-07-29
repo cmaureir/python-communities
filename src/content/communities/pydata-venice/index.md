@@ -4,8 +4,8 @@ city: "Venezia"
 country: "IT"
 latitude: 45.44
 longitude: 12.33
-category: "PyData"
-website: "https://www.meetup.com/pydata-venice/"
+category: ["PyData"]
+meetup: "https://www.meetup.com/pydata-venice/"
 description: "PyData brings together analysts, scientists, developers, engineers, architects and others from the data science community to discuss new techniques and tools for management, analytics and visualization of data."
 image: ./image.jpeg
 ---

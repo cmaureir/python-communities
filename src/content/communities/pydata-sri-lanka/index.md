@@ -4,8 +4,8 @@ city: "Colombo"
 country: "LK"
 latitude: 6.93
 longitude: 79.85
-category: "PyData"
-website: "https://www.meetup.com/colombo-pydata-meetup-group/"
+category: ["PyData"]
+meetup: "https://www.meetup.com/colombo-pydata-meetup-group/"
 description: "Welcome to the PyData Sri Lanka Chapter!"
 image: ./image.jpeg
 ---

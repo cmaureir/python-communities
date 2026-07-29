@@ -4,8 +4,8 @@ city: "Pescara"
 country: "IT"
 latitude: 42.47
 longitude: 14.22
-category: "Meetup"
-website: "https://www.meetup.com/pythonpescara/"
+category: ["Meetup"]
+meetup: "https://www.meetup.com/pythonpescara/"
 description: "In Python Pescara vogliamo aggiornarci su questo linguaggio e creare connessioni locali tra coloro che lo usano o vorrebbero usarlo."
 image: ./image.jpeg
 ---

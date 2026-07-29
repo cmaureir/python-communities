@@ -4,8 +4,8 @@ city: "Berlin"
 country: "DE"
 latitude: 52.5200
 longitude: 13.4050
-category: "Meetup"
-website: "https://www.meetup.com/pyberlin"
+category: ["Meetup"]
+meetup: "https://www.meetup.com/pyberlin"
 description: "PyBerlin is an inclusive community for anyone interested in Python - at all levels."
 image: ./pyberlin.jpeg
 ---

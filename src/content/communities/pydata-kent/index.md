@@ -4,8 +4,8 @@ city: "Canterbury"
 country: "GB"
 latitude: 51.28
 longitude: 1.08
-category: "PyData"
-website: "https://www.meetup.com/pydata-kent/"
+category: ["PyData"]
+meetup: "https://www.meetup.com/pydata-kent/"
 description: "A community-driven meetup for data enthusiasts, professionals, and researchers in Kent interested in data science, machine learning, and AI."
 ---
 

@@ -4,8 +4,8 @@ city: "Livermore"
 country: "US"
 latitude: 37.68
 longitude: -121.75
-category: "Meetup"
-website: "https://www.meetup.com/californiapython/"
+category: ["Meetup"]
+meetup: "https://www.meetup.com/californiapython/"
 description: "We are into the Python language and anything related to the profession of software engineering."
 image: ./image.jpeg
 ---

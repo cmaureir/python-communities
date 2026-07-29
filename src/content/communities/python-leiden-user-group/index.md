@@ -4,8 +4,9 @@ city: "Leiden"
 country: "NL"
 latitude: 52.17
 longitude: 4.49
-category: "Meetup"
-website: "https://www.meetup.com/python-leiden-user-group/"
+category: ["Meetup", "Luma"]
+meetup: "https://www.meetup.com/python-leiden-user-group/"
+luma: "https://luma.com/s56qifq8"
 description: "We're a group of enthusiastic users of the popular Python programming language, meeting to exchange knowledge and experiences."
 image: ./image.jpeg
 ---

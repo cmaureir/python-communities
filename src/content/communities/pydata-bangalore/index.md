@@ -4,8 +4,8 @@ city: "Bangalore"
 country: "IN"
 latitude: 12.97
 longitude: 77.56
-category: "PyData"
-website: "https://www.meetup.com/pydata-bangalore/"
+category: ["PyData"]
+meetup: "https://www.meetup.com/pydata-bangalore/"
 description: "PyData is a group for users and developers of data analysis tools to share ideas and learn from each other."
 image: ./image.png
 ---

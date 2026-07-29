@@ -4,8 +4,8 @@ city: "Cluj-Napoca"
 country: "RO"
 latitude: 46.78
 longitude: 23.59
-category: "PyData"
-website: "https://www.meetup.com/PyData-Cluj-Napoca/"
+category: ["PyData"]
+meetup: "https://www.meetup.com/PyData-Cluj-Napoca/"
 description: "PyData is an educational program of NumFOCUS, a 501(c)3 non-profit organization in the United States."
 image: ./image.jpeg
 ---

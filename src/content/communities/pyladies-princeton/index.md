@@ -4,8 +4,8 @@ city: "Princeton"
 country: "US"
 latitude: 40.37
 longitude: -74.67
-category: "PyLadies"
-website: "https://www.meetup.com/PyLadies-Princeton/"
+category: ["PyLadies"]
+meetup: "https://www.meetup.com/PyLadies-Princeton/"
 description: "PyLadies is an international mentorship group with a focus on helping more women become active participants and leaders in the Python open-source community."
 image: ./image.png
 ---

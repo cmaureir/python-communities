@@ -4,8 +4,8 @@ city: "Lemesos"
 country: "CY"
 latitude: 34.68
 longitude: 33.05
-category: "PyData"
-website: "https://www.meetup.com/PyData-Cyprus/"
+category: ["PyData"]
+meetup: "https://www.meetup.com/PyData-Cyprus/"
 description: "PyData Cyprus is the Cyprus chapter of the international PyData community."
 image: ./image.jpeg
 ---

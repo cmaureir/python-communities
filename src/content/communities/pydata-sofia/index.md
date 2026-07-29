@@ -4,8 +4,8 @@ city: "Sofia"
 country: "BG"
 latitude: 42.69
 longitude: 23.31
-category: "PyData"
-website: "https://www.meetup.com/pydata-sofia/"
+category: ["PyData"]
+meetup: "https://www.meetup.com/pydata-sofia/"
 description: "PyData Sofia Meetups are monthly events organized with the purpose to meet and talk about Python, Data Science, AI and other interesting topics."
 image: ./image.jpeg
 ---

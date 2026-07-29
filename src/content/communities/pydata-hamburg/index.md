@@ -4,8 +4,8 @@ city: "Hamburg"
 country: "DE"
 latitude: 53.55
 longitude: 10
-category: "PyData"
-website: "https://www.meetup.com/PyData-Hamburg/"
+category: ["PyData"]
+meetup: "https://www.meetup.com/PyData-Hamburg/"
 description: "PyData is an educational program of NumFOCUS, a 501(c)3 non-profit organization in the United States."
 image: ./image.png
 ---

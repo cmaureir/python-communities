@@ -4,8 +4,8 @@ city: "Bangkok"
 country: "TH"
 latitude: 13.73
 longitude: 100.5
-category: "Meetup"
-website: "https://www.meetup.com/only_devs_bangkok/"
+category: ["Meetup"]
+meetup: "https://www.meetup.com/only_devs_bangkok/"
 description: "One of Bangkok's longest-running tech meetups, formerly known as ThaiPy."
 image: ./image.jpeg
 ---

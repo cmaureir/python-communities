@@ -4,8 +4,8 @@ city: "Johannesburg"
 country: "ZA"
 latitude: -26.19
 longitude: 28.04
-category: "PyData"
-website: "https://www.meetup.com/pydata-johannesburg/"
+category: ["PyData"]
+meetup: "https://www.meetup.com/pydata-johannesburg/"
 description: "We’re bringing PyData events back to Johannesburg!"
 image: ./image.jpeg
 ---

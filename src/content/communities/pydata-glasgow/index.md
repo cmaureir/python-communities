@@ -4,8 +4,8 @@ city: "Glasgow"
 country: "GB"
 latitude: 55.87
 longitude: -4.27
-category: "PyData"
-website: "https://www.meetup.com/meetup-group-djhiglzd/"
+category: ["PyData"]
+meetup: "https://www.meetup.com/meetup-group-djhiglzd/"
 description: "PyData is an educational program of NumFOCUS, a 501(c)3 non-profit organization in the United States."
 image: ./image.jpeg
 ---

@@ -4,8 +4,8 @@ city: "Wellington"
 country: "NZ"
 latitude: -41.28
 longitude: 174.78
-category: "Meetup"
-website: "https://www.meetup.com/pythonnz-wellington/"
+category: ["Meetup"]
+meetup: "https://www.meetup.com/pythonnz-wellington/"
 description: "This is a group for anyone interested in the Python programming language."
 image: ./image.jpeg
 ---

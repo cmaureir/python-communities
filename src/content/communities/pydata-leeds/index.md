@@ -4,8 +4,8 @@ city: "Leeds"
 country: "GB"
 latitude: 53.81
 longitude: -1.55
-category: "PyData"
-website: "https://www.meetup.com/pydata-leeds/"
+category: ["PyData"]
+meetup: "https://www.meetup.com/pydata-leeds/"
 description: "PyData Leeds is the Leeds Chapter of the International PyData Community."
 image: ./image.jpeg
 ---

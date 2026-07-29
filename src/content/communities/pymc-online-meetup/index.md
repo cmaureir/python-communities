@@ -4,8 +4,8 @@ city: "New York"
 country: "US"
 latitude: 40.85
 longitude: -73.94
-category: "PyData"
-website: "https://www.meetup.com/pymc-online-meetup/"
+category: ["PyData"]
+meetup: "https://www.meetup.com/pymc-online-meetup/"
 description: "Welcome to our world-wide PyMC Online Meetup!"
 image: ./image.jpeg
 ---

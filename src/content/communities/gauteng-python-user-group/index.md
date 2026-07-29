@@ -4,8 +4,8 @@ city: "Johannesburg"
 country: "ZA"
 latitude: -26.19
 longitude: 28.04
-category: "Meetup"
-website: "https://www.meetup.com/gauteng-python-users-group/"
+category: ["Meetup"]
+meetup: "https://www.meetup.com/gauteng-python-users-group/"
 description: "Gauteng Python Users Group Founded in 2014 via the Gauteng Python Google User Group, the GPUG is now one of the largest Python meetup groups in South Africa and 1 of the largest tech meetup groups in South Africa."
 image: ./image.jpeg
 ---

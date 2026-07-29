@@ -4,8 +4,8 @@ city: "Manchester"
 country: "GB"
 latitude: 53.48
 longitude: -2.25
-category: "PyData"
-website: "https://www.meetup.com/pydata-manchester/"
+category: ["PyData"]
+meetup: "https://www.meetup.com/pydata-manchester/"
 description: "PyData MCR is the Manchester chapter of the International PyData Community."
 image: ./image.png
 ---

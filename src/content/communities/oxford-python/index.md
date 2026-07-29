@@ -4,8 +4,8 @@ city: "Oxford"
 country: "GB"
 latitude: 51.75
 longitude: -1.28
-category: "Meetup"
-website: "https://www.meetup.com/oxfordpython/"
+category: ["Meetup"]
+meetup: "https://www.meetup.com/oxfordpython/"
 description: "This is a group for anyone who is interested in Python or Python based projects looking to meetup with fellow Pythonistas."
 image: ./image.jpeg
 ---

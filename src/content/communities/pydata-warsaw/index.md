@@ -4,8 +4,8 @@ city: "Warsaw"
 country: "PL"
 latitude: 52.26
 longitude: 21.02
-category: "PyData"
-website: "https://www.meetup.com/PyData-Warsaw/"
+category: ["PyData"]
+meetup: "https://www.meetup.com/PyData-Warsaw/"
 description: "This is a group for anyone interested in Machine Learning and Artificial Intelligence and their applications such as Big Data, predictive analytics, data science and robotics."
 image: ./image.jpeg
 ---

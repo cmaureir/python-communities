@@ -4,8 +4,8 @@ city: "Sion"
 country: "CH"
 latitude: 46.25
 longitude: 7.35
-category: "PyData"
-website: "https://www.meetup.com/pydata-valais/"
+category: ["PyData"]
+meetup: "https://www.meetup.com/pydata-valais/"
 description: "What is PyData Valais?"
 image: ./image.jpeg
 ---

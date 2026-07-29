@@ -4,8 +4,8 @@ city: "Eindhoven"
 country: "NL"
 latitude: 51.44
 longitude: 5.47
-category: "PyData"
-website: "https://www.meetup.com/pydata-eindhoven/"
+category: ["PyData"]
+meetup: "https://www.meetup.com/pydata-eindhoven/"
 description: "The global PyData network promotes discussion of best practices, new approaches, and emerging technologies for data management, processing, analytics, and visualization."
 image: ./image.jpeg
 ---

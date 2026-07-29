@@ -4,8 +4,9 @@ city: "Cebu"
 country: "PH"
 latitude: 10.32
 longitude: 123.9
-category: "Meetup"
-website: "https://www.meetup.com/pizzapy-ph/"
+category: ["Meetup", "Luma"]
+meetup: "https://www.meetup.com/pizzapy-ph/"
+luma: "https://luma.com/user/PizzaPy_PH"
 description: "A regular monthly meetup for Python and software enthusiasts in Cebu."
 image: ./image.jpeg
 ---

@@ -4,8 +4,8 @@ city: "Nürnberg"
 country: "DE"
 latitude: 49.45
 longitude: 11.05
-category: "Meetup"
-website: "https://www.meetup.com/python-user-group-nuremberg/"
+category: ["Meetup"]
+meetup: "https://www.meetup.com/python-user-group-nuremberg/"
 description: "Hello Everyone!"
 image: ./image.jpeg
 ---

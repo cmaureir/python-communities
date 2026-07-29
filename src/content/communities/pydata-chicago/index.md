@@ -4,8 +4,8 @@ city: "Chicago"
 country: "US"
 latitude: 41.88
 longitude: -87.62
-category: "PyData"
-website: "https://www.meetup.com/pydatachi/"
+category: ["PyData"]
+meetup: "https://www.meetup.com/pydatachi/"
 description: "PyData Chicago is a monthly meetup to discuss all things python (or R, Julia, C++, Rust, Go, ...) and data!"
 image: ./image.png
 ---

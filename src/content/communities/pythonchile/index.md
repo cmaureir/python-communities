@@ -4,8 +4,8 @@ city: "Santiago"
 country: "CL"
 latitude: -33.46
 longitude: -70.64
-category: "Meetup"
-website: "https://www.meetup.com/pythonchiledev/"
+category: ["Meetup"]
+meetup: "https://www.meetup.com/pythonchiledev/"
 description: "A Python meetup group based in Santiago."
 image: ./image.jpeg
 ---

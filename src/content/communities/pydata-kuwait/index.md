@@ -4,8 +4,8 @@ city: "al-Kuwayt"
 country: "KW"
 latitude: 29.37
 longitude: 48
-category: "PyData"
-website: "https://www.meetup.com/kuwait-pydata-meetup-group/"
+category: ["PyData"]
+meetup: "https://www.meetup.com/kuwait-pydata-meetup-group/"
 description: "PyData is an educational program of NumFOCUS, a 501(c)3 non-profit organization in the United States."
 image: ./image.jpeg
 ---

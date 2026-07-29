@@ -4,8 +4,8 @@ city: "Bellevue"
 country: "US"
 latitude: 47.68
 longitude: -122.29
-category: "PyLadies"
-website: "https://www.meetup.com/seattle-pyladies/"
+category: ["PyLadies"]
+meetup: "https://www.meetup.com/seattle-pyladies/"
 description: "♥️ This meetup group is run by 100% volunteers who support the Seattle open source community."
 image: ./image.jpeg
 ---

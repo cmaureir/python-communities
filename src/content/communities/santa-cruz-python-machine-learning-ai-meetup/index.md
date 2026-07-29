@@ -4,8 +4,8 @@ city: "Santa Cruz"
 country: "US"
 latitude: 36.99
 longitude: -122.06
-category: "Meetup"
-website: "https://www.meetup.com/santa-cruz-python/"
+category: ["Meetup"]
+meetup: "https://www.meetup.com/santa-cruz-python/"
 description: "We try to meet once a month, usually a Tuesday or Wednesday, latter part of the month."
 image: ./image.jpeg
 ---
