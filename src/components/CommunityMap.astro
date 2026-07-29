@@ -23,14 +23,36 @@ const communityLocations = communities.map(community => ({
 
 <script is:inline define:vars={{ communityLocations }}>
     document.addEventListener('DOMContentLoaded', () => {
-    const map = L.map('map').setView([20, 0], 2);
+    const map = L.map('map', {
+      maxBounds: [[-90, -180], [90, 180]],
+      maxBoundsViscosity: 1.0,
+      zoomSnap: 0.1
+    }).setView([20, 0], 2);
+
+    // Fit the zoom so the single world copy always spans the container's
+    // width (no gray gutters), even though that crops the poles vertically.
+    const fitZoomToWidth = () => {
+      const containerWidth = map.getSize().x;
+      if (!containerWidth) return;
+      const zoom = Math.log2(containerWidth / 256);
+      map.setMinZoom(zoom);
+      map.setZoom(zoom);
+    };
+
+    fitZoomToWidth();
+    window.addEventListener('resize', () => {
+      map.invalidateSize();
+      fitZoomToWidth();
+    });
 
     const tileLayers = {
       light: L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '© OpenStreetMap contributors'
+        attribution: '© OpenStreetMap contributors',
+        noWrap: true
       }),
       dark: L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
-        attribution: '© OpenStreetMap contributors © CARTO'
+        attribution: '© OpenStreetMap contributors © CARTO',
+        noWrap: true
       })
     };
 
