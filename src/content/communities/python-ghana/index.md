@@ -4,6 +4,7 @@ city: "Accra"
 country: "GH"
 category: ["Organization"]
 website: "https://www.pythonghana.org/"
+meetup: "https://www.meetup.com/python-ghana/"
 latitude: 5.614818
 longitude: -0.205874
 description: "A non-profit run solely by kind-hearted volunteers with the common vision of moving Africa to the forefront in the world of technology."

@@ -5,6 +5,7 @@ country: "ES"
 latitude: 41.4
 longitude: 2.17
 category: ["Meetup"]
+website: "https://pybcn.org"
 meetup: "https://www.meetup.com/python-barcelona/"
 description: "Welcome to Python Barcelona!"
 image: ./image.jpeg
