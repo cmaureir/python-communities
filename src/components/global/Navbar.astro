@@ -27,7 +27,7 @@ const externalLinks = [
     <div class="relative flex h-16 items-center justify-between">
       <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
         <!-- Mobile menu button-->
-        <button type="button" command="--toggle" commandfor="mobile-menu" class="relative inline-flex items-center justify-center rounded-md p-2 hover:bg-gray-900/5 dark:hover:bg-white/5 hover:text-gray-900 dark:hover:text-white focus:outline-2 focus:-outline-offset-1 focus:outline-indigo-500">
+        <button type="button" id="mobile-menu-button" aria-controls="mobile-menu" aria-expanded="false" class="relative inline-flex items-center justify-center rounded-md p-2 hover:bg-gray-900/5 dark:hover:bg-white/5 hover:text-gray-900 dark:hover:text-white focus:outline-2 focus:-outline-offset-1 focus:outline-indigo-500">
           <span class="absolute -inset-0.5"></span>
           <span class="sr-only">Open main menu</span>
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 in-aria-expanded:hidden">
@@ -63,15 +63,12 @@ const externalLinks = [
           ))}
         </div>
         <span class="h-5 w-px bg-gray-900/10 dark:bg-white/10"></span>
-        <ThemeIcon/>
       </div>
-      <div class="flex items-center sm:hidden">
-        <ThemeIcon/>
-      </div>
+      <ThemeIcon/>
     </div>
   </div>
 
-  <el-disclosure id="mobile-menu" hidden class="block sm:hidden">
+  <div id="mobile-menu" hidden class="block sm:hidden">
     <div class="space-y-1 px-2 pt-2 pb-3">
       <a href="/" aria-current={isCommunities ? 'page' : undefined} class={`${mobileLinkBase} ${isCommunities ? mobileLinkActive : mobileLinkInactive}`}>Communities</a>
       <a href="/contributing" aria-current={isContributing ? 'page' : undefined} class={`${mobileLinkBase} ${isContributing ? mobileLinkActive : mobileLinkInactive}`}>How to Contribute</a>
@@ -86,6 +83,27 @@ const externalLinks = [
         </a>
       ))}
     </div>
-  </el-disclosure>
+  </div>
 </nav>
+
+<script is:inline>
+  document.addEventListener('DOMContentLoaded', () => {
+    const button = document.getElementById('mobile-menu-button');
+    const menu = document.getElementById('mobile-menu');
+    if (!button || !menu) return;
+
+    button.addEventListener('click', () => {
+      const willOpen = menu.hidden;
+      menu.hidden = !willOpen;
+      button.setAttribute('aria-expanded', String(willOpen));
+    });
+
+    menu.querySelectorAll('a').forEach((link) => {
+      link.addEventListener('click', () => {
+        menu.hidden = true;
+        button.setAttribute('aria-expanded', 'false');
+      });
+    });
+  });
+</script>
 
