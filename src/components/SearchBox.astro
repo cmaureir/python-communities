@@ -230,8 +230,8 @@ const { items, categories, countries, countryNames } = Astro.props;
     </div>
 
     <!-- Results Count -->
-    <div class="mt-4 flex items-center justify-between text-sm text-gray-600 dark:text-zinc-400">
-      <div>
+    <div class="mt-4 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between text-sm text-gray-600 dark:text-zinc-400">
+      <div class="order-2 sm:order-none">
         <strong x-text="filteredItems.length"></strong>&nbsp;
         <span x-text="filteredItems.length === 1 ? 'community' : 'communities'"></span>
         <span x-show="selectedCategory !== 'all'"> in <span x-text="selectedCategory"></span></span>
@@ -239,7 +239,7 @@ const { items, categories, countries, countryNames } = Astro.props;
       </div>
 
       <!-- Include Inactive Toggle -->
-      <label class="flex items-center gap-2 font-medium cursor-pointer select-none whitespace-nowrap">
+      <label class="order-1 sm:order-none flex items-center gap-2 font-medium cursor-pointer select-none whitespace-nowrap">
         <input
           type="checkbox"
           x-model="includeInactive"
