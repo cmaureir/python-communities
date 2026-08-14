@@ -30,11 +30,13 @@ const communities = await Promise.all(
 );
 
 const categories = [...new Set(items.flatMap(item => item.data.category))].sort();
-const countries = [...new Set(items.map(item => item.data.country))].sort();
+const countries = [...new Set(items.map(item => item.data.country))];
 
 const countryNames = Object.fromEntries(
     countries.map(code => [code, regionNames.of(code) ?? code])
 );
+
+countries.sort((a, b) => countryNames[a].localeCompare(countryNames[b]));
 ---
 
 <section class="mt-4">
