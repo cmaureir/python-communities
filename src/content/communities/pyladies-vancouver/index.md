@@ -5,7 +5,8 @@ country: "CA"
 latitude: 49.28
 longitude: -123.04
 category: ["PyLadies"]
-meetup: "https://luma.com/pyladiesvancouver"
+meetup: "https://www.meetup.com/pyladies-vancouver/"
+luma: "https://luma.com/pyladiesvancouver"
 description: "Hello and welcome to PyLadies Vancouver!"
 image: ./image.png
 ---
