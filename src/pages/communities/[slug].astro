@@ -41,7 +41,7 @@ const { Content } = await render(community);
     <!-- Title and Metadata -->
     <header class="mb-8">
       <h1 class="text-4xl font-bold mb-4">{community.data.title}</h1>
-      <div class="flex gap-4 text-gray-600 dark:text-gray-400">
+      <div class="flex flex-wrap gap-4 text-gray-600 dark:text-gray-400">
         <span>📍 {community.data.city}, {community.data.country}</span>
         <span>🏷️ {community.data.category.join(', ')}</span>
         {community.data.website && (
@@ -52,6 +52,12 @@ const { Content } = await render(community);
         )}
         {community.data.luma && (
           <span>📅 <a href={community.data.luma} class="hover:underline">{community.data.luma}</a></span>
+        )}
+        {community.data.facebook && (
+          <span>📘 <a href={community.data.facebook} class="hover:underline">{community.data.facebook}</a></span>
+        )}
+        {community.data.instagram && (
+          <span>📷 <a href={community.data.instagram} class="hover:underline">{community.data.instagram}</a></span>
         )}
       </div>
       {community.data.description && (

@@ -7,6 +7,8 @@ longitude: -34.90
 category: ["Meetup", "Regional"]
 description: "A long-running Python community for the state of Pernambuco, organizing 'Encontros' covering open source, Django, and data science with Python."
 meetup: "https://www.meetup.com/python-user-group-pernambuco-pug-pe/"
+instagram: "https://www.instagram.com/pug.pe/"
+image: ./image.png
 inactive: "yes"
 ---
 

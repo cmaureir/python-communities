@@ -15,6 +15,8 @@ const communitiesCollection = defineCollection({
     website: z.string().optional(),
     meetup: z.string().optional(),
     luma: z.string().optional(),
+    facebook: z.string().optional(),
+    instagram: z.string().optional(),
     inactive: z.enum(['yes', 'no']).optional(),
   }),
 });

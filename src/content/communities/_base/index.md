@@ -12,6 +12,10 @@ website: "https://your-group.example.com"
 meetup: "https://www.meetup.com/your-group/"
 # Optional. Set only if the community also has a Luma events page.
 luma: "https://luma.com/your-group"
+# Optional. Set only if the community uses Facebook as a page/group.
+facebook: "https://www.facebook.com/your-group"
+# Optional. Set only if the community has an Instagram account.
+instagram: "https://www.instagram.com/your-group"
 description: "A description"
 image: ./image.jpeg
 # Optional. Leave unset if unknown. Set to "yes" once confirmed inactive/defunct.

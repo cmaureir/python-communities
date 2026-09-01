@@ -6,6 +6,7 @@ latitude: 28.7041
 longitude: 77.1025
 category: ["PyLadies"]
 meetup: "https://www.meetup.com/pyladiesindia/"
+instagram: "https://www.instagram.com/pyladiesindia/"
 description: "A Delhi-based group for women interested in Python, organizing meetups, hackathons, and casual discussions for all skill levels."
 inactive: "yes"
 ---

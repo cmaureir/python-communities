@@ -5,7 +5,10 @@ country: "NG"
 latitude: 6.45
 longitude: 3.47
 category: ["Meetup"]
+website: "https://www.pynigeria.org/"
 meetup: "https://www.meetup.com/python-users-nigeria-meetup/"
+facebook: "https://www.facebook.com/pythonnigeria/"
+instagram: "https://www.instagram.com/pynigeria/"
 description: "Welcome to the Official Python Nigeria Meetup!"
 image: ./image.jpeg
 ---

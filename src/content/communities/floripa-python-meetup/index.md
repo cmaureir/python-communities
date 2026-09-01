@@ -5,7 +5,9 @@ country: "BR"
 latitude: -27.60
 longitude: -48.55
 category: ["Meetup"]
+website: "http://floripa.sc.python.org.br/"
 meetup: "https://www.meetup.com/floripa-python-meetup/"
+facebook: "https://www.facebook.com/groups/python.floripa/"
 description: "A large, active community for Python developers in Florianópolis to connect, exchange knowledge, and find job opportunities."
 ---
 
