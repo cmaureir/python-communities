@@ -6,6 +6,7 @@ latitude: -33.46
 longitude: -70.64
 category: ["Meetup"]
 meetup: "https://www.meetup.com/pythonchiledev/"
+instagram: "https://www.instagram.com/pythonchiledev/"
 description: "A Python meetup group based in Santiago."
 image: ./image.jpeg
 ---

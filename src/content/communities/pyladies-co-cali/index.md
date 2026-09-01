@@ -6,7 +6,9 @@ latitude: 3.45
 longitude: -76.53
 category: ["PyLadies"]
 meetup: "https://www.meetup.com/pyladies-co-cali/"
+instagram: "https://www.instagram.com/pyladiescali/"
 description: "A Cali community teaching and promoting women's presence in tech through Python, with a focus on diversity and inclusive leadership."
+image: ./image.jpg
 inactive: "yes"
 ---
 

@@ -6,6 +6,7 @@ latitude: 5.5571096
 longitude: -0.2012376
 category: ["PyLadies"]
 website: "https://ghana.pyladies.com"
+instagram: "https://www.instagram.com/pyladiesghana/"
 description: "An international mentorship group helping more women become active participants and leaders in the Python community."
 image: ./image.jpeg
 inactive: "yes"

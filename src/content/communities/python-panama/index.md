@@ -6,6 +6,7 @@ latitude: 8.97
 longitude: -79.53
 category: ["Meetup"]
 meetup: "https://www.meetup.com/python-panama/"
+instagram: "https://www.instagram.com/pythonpanama/"
 description: "Somos la comunidad que reúne a estudiantes, profesionales, autodidactas y curiosos interesados en el lenguaje de programación Python."
 image: ./image.jpeg
 ---

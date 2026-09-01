@@ -6,6 +6,7 @@ latitude: -16.4955455
 longitude: -68.1336229
 category: ["Meetup"]
 website: "https://t.me/pythonlapaz"
+instagram: "https://www.instagram.com/pythonlapaz/"
 description: "The Python community of La Paz, Bolivia."
 image: ./image.jpeg
 ---

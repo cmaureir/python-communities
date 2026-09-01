@@ -6,6 +6,7 @@ latitude: 57.8494
 longitude: 12.0399
 category: ["Organization", "Regional"]
 website: "https://www.europython-society.org/"
+instagram: "https://www.instagram.com/europython/"
 description: "The non-profit organizing body behind the EuroPython conference series, supporting Python community initiatives and grants across Europe."
 image: ./image.png
 ---

@@ -6,6 +6,7 @@ latitude: -16.5
 longitude: -68.15
 category: ["PyLadies"]
 meetup: "https://www.meetup.com/La-Paz-PyLadies-Meetup/"
+instagram: "https://www.instagram.com/pyladieslapaz/"
 description: "Everyone is invited, especially if they help to include more women in this area."
 image: ./image.png
 ---

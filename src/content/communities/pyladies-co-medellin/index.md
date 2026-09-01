@@ -6,7 +6,9 @@ latitude: 6.25
 longitude: -75.59
 category: ["PyLadies"]
 meetup: "https://www.meetup.com/pyladies-co-medellin/"
+instagram: "https://www.instagram.com/pyladiesmed/"
 description: "A Medellín-based chapter of PyLadies dedicated to teaching Python and promoting the presence of women in tech, welcoming people of all backgrounds."
+image: ./image.jpg
 inactive: "yes"
 ---
 

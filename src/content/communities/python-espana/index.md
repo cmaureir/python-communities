@@ -6,7 +6,9 @@ latitude: 40.4168
 longitude: -3.7038
 category: ["Meetup", "Regional"]
 meetup: "https://www.meetup.com/python-espana/"
+instagram: "https://www.instagram.com/python_spain/"
 description: "The umbrella Python España community, organizing talks and events across Spain in both in-person and virtual formats throughout the year."
+image: ./image.jpg
 inactive: "yes"
 ---
 

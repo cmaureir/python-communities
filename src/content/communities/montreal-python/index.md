@@ -6,6 +6,7 @@ latitude: 45.54
 longitude: -73.64
 category: ["Meetup"]
 meetup: "https://www.meetup.com/montreal-python/"
+instagram: "https://www.instagram.com/montrealpython/"
 description: "We have regular meetings consisting of several short presentations followed by a longer main presentation."
 image: ./image.jpeg
 ---

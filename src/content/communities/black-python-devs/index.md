@@ -6,6 +6,7 @@ latitude: 37.8771
 longitude: -122.1797
 category: ["Organization", "Regional"]
 website: "https://blackpythondevs.com/"
+instagram: "https://www.instagram.com/blackpythondevs/"
 description: "A nonprofit expanding access to Python communities and resources for communities of Black Python developers around the world, fiscally hosted by the GNOME Foundation."
 image: ./image.png
 ---

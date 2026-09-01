@@ -6,6 +6,7 @@ latitude: 18.48
 longitude: -69.91
 category: ["Meetup"]
 meetup: "https://www.meetup.com/pythonsdq/"
+instagram: "https://www.instagram.com/pythonsdq/"
 description: "¡Bienvenidos a PythonSDQ!"
 image: ./image.jpeg
 ---

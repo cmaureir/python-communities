@@ -6,6 +6,7 @@ latitude: 6.25
 longitude: -75.59
 category: ["Meetup"]
 meetup: "https://www.meetup.com/python-medellin/"
+instagram: "https://www.instagram.com/pythonmedellin/"
 description: "An open community for anyone interested in learning Python and its ecosystem, based in Medellín, Colombia."
 image: ./image.jpeg
 ---
