@@ -5,7 +5,7 @@ const communities = await getCollection('communities');
 
 // You'll need to geocode cities to coordinates
 // For now, create a manual mapping or use a geocoding API
-const communityLocations = communities.map(community => ({
+const rawLocations = communities.map(community => ({
   id: community.id,
   name: community.data.title,
   city: community.data.city,
@@ -14,6 +14,37 @@ const communityLocations = communities.map(community => ({
   lng: Number(community.data.longitude),
   lat: Number(community.data.latitude),
 }));
+
+// Several communities can share the same (or near-identical) coordinates,
+// e.g. multiple groups in the same city. Left as-is, their map pins stack
+// exactly on top of each other and only the topmost one is ever visible or
+// clickable. Nudge same-spot pins into a small circle around the real point
+// so zooming in reveals and lets you click every one of them individually.
+// This only affects where the pin is drawn — the stored lat/lng data (shown
+// on each community's own page) is untouched.
+const coordinateGroups = new Map<string, typeof rawLocations>();
+for (const location of rawLocations) {
+  const key = `${location.lat.toFixed(3)},${location.lng.toFixed(3)}`;
+  if (!coordinateGroups.has(key)) coordinateGroups.set(key, []);
+  coordinateGroups.get(key)!.push(location);
+}
+
+const JITTER_RADIUS_DEGREES = 0.02;
+const communityLocations = [...coordinateGroups.values()].flatMap(group => {
+  if (group.length === 1) return group;
+
+  const latitudeRadians = (group[0].lat * Math.PI) / 180;
+  return group.map((location, index) => {
+    const angle = (2 * Math.PI * index) / group.length;
+    return {
+      ...location,
+      lat: location.lat + JITTER_RADIUS_DEGREES * Math.cos(angle),
+      // Longitude degrees shrink as they get closer to the poles, so
+      // widen the offset to keep the circle visually round everywhere.
+      lng: location.lng + (JITTER_RADIUS_DEGREES * Math.sin(angle)) / Math.cos(latitudeRadians),
+    };
+  });
+});
 ---
 
 <div id="map" class="w-full dark:ring-1 dark:ring-white/10" style="height: 400px;"></div>
